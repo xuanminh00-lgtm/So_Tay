@@ -3,6 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+
+  <!-- Polyfill / Protection for browser extension interceptors attempting to assign window.fetch -->
+  <script>
+    (function() {
+      // 1. Suppress uncaught errors from browser extensions
+      window.addEventListener('error', function(event) {
+        if (
+          (event.filename && event.filename.indexOf('chrome-extension://') !== -1) ||
+          (event.message && (
+            event.message.indexOf('Cannot set property fetch of') !== -1 ||
+            event.message.indexOf('requests.js') !== -1
+          ))
+        ) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+          return true;
+        }
+      }, true);
+
+      // 2. Define a flexible setter for window.fetch so extension interceptors don't throw TypeError
+      try {
+        var _origFetch = typeof window.fetch === 'function' ? window.fetch.bind(window) : null;
+        var _customFetch = _origFetch;
+        var def = {
+          get: function() {
+            return _customFetch || _origFetch;
+          },
+          set: function(val) {
+            _customFetch = val;
+          },
+          configurable: true,
+          enumerable: true
+        };
+        try {
+          Object.defineProperty(window, 'fetch', def);
+        } catch (e1) {
+          if (window.Window && Window.prototype) {
+            try {
+              Object.defineProperty(Window.prototype, 'fetch', def);
+            } catch (e2) {}
+          }
+        }
+      } catch (e) {}
+    })();
+  </script>
   <title>Sổ Tay Kỹ Năng Số Quản Bạ - Bình Dân Học Vụ Số 2026</title>
   <meta name="description" content="Sổ tay kỹ năng số bỏ túi - Bình dân học vụ số Quản Bạ, tỉnh Tuyên Quang năm 2026. Hướng dẫn trực quan kỹ năng số thiết yếu cho học sinh và bà con bản làng." />
   <meta property="og:title" content="Sổ Tay Kỹ Năng Số Quản Bạ - Bình Dân Học Vụ Số 2026" />
