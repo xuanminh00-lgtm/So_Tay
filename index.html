@@ -1,0 +1,2856 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <title>Sổ Tay Kỹ Năng Số Quản Bạ - Bình Dân Học Vụ Số 2026</title>
+  <meta name="description" content="Sổ tay kỹ năng số bỏ túi - Bình dân học vụ số Quản Bạ, tỉnh Tuyên Quang năm 2026. Hướng dẫn trực quan kỹ năng số thiết yếu cho học sinh và bà con bản làng." />
+  <meta property="og:title" content="Sổ Tay Kỹ Năng Số Quản Bạ - Bình Dân Học Vụ Số 2026" />
+  <meta property="og:description" content="Sổ tay kỹ năng số bỏ túi - Bình dân học vụ số Quản Bạ, tỉnh Tuyên Quang năm 2026. Hướng dẫn trực quan kỹ năng số thiết yếu cho học sinh và bà con bản làng." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome 6 Free CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts: Be Vietnam Pro & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Be Vietnam Pro"', 'sans-serif'],
+          },
+          colors: {
+            co_do: '#b91c1c',
+            co_do_dam: '#881337',
+            sao_vang: '#f59e0b',
+            sao_vang_sang: '#fbbf24',
+            vang_dat: '#d97706',
+            rung_xanh: '#047857',
+            nui_xanh: '#0f766e',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      touch-action: manipulation;
+    }
+
+    /* Hiệu ứng sóng âm khi đang đọc */
+    @keyframes waveBar {
+      0%, 100% { height: 6px; }
+      50% { height: 22px; }
+    }
+    .wave-bar-1 { animation: waveBar 0.8s ease-in-out infinite; }
+    .wave-bar-2 { animation: waveBar 0.8s ease-in-out 0.2s infinite; }
+    .wave-bar-3 { animation: waveBar 0.8s ease-in-out 0.4s infinite; }
+    .wave-bar-4 { animation: waveBar 0.8s ease-in-out 0.1s infinite; }
+
+    /* Hiệu ứng giấy khen in ấn */
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #print-certificate-area, #print-certificate-area * {
+        visibility: visible;
+      }
+      #print-certificate-area {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 20px;
+        background: #fff !important;
+        box-shadow: none !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+
+    /* Chế độ chữ to cho người cao tuổi */
+    body.large-text-mode {
+      font-size: 1.15rem;
+    }
+    body.large-text-mode h1 { font-size: 1.75rem; }
+    body.large-text-mode h2 { font-size: 1.5rem; }
+    body.large-text-mode h3 { font-size: 1.35rem; }
+    body.large-text-mode p, body.large-text-mode li { font-size: 1.125rem; line-height: 1.75; }
+
+    /* Họa tiết hoa văn truyền thống / cờ đỏ sao vàng */
+    .bg-pattern-ethnic {
+      background-color: #991b1b;
+      background-image: radial-gradient(rgba(245, 158, 11, 0.25) 1px, transparent 0);
+      background-size: 16px 16px;
+    }
+
+    /* Tối ưu thanh cuộn ngang */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col antialiased selection:bg-amber-200 selection:text-red-900">
+
+  <!-- ==================== HEADER & BANNER THI ĐUA ==================== -->
+  <header class="bg-gradient-to-b from-red-800 via-red-700 to-red-800 text-white shadow-lg border-b-4 border-amber-400 relative overflow-hidden">
+    <!-- Họa tiết sao vàng trang trí mờ phía sau -->
+    <div class="absolute -right-10 -top-10 opacity-10 pointer-events-none">
+      <i class="fa-solid fa-star text-amber-300 text-[180px]"></i>
+    </div>
+    <div class="absolute -left-8 -bottom-8 opacity-10 pointer-events-none">
+      <i class="fa-solid fa-book-open-reader text-amber-300 text-[140px]"></i>
+    </div>
+
+    <!-- Thanh tiện ích nhanh trên cùng -->
+    <div class="max-w-4xl mx-auto px-4 py-2 border-b border-red-600/60 flex items-center justify-between text-xs sm:text-sm">
+      <div class="flex items-center gap-2 text-amber-200 font-medium">
+        <i class="fa-solid fa-location-dot text-amber-400"></i>
+        <span>Quản Bạ, Tuyên Quang</span>
+        <span class="text-red-300">·</span>
+        <span class="bg-amber-400/20 text-amber-200 px-2 py-0.5 rounded text-[11px] font-semibold border border-amber-400/30">Năm 2026</span>
+      </div>
+
+      <!-- Nút điều chỉnh trợ năng (Chữ to & Âm thanh) -->
+      <div class="flex items-center gap-2">
+        <button id="toggle-large-font-btn" onclick="toggleLargeFont()" class="bg-red-900/70 hover:bg-red-950 text-white px-2.5 py-1 rounded-md text-xs font-semibold flex items-center gap-1.5 transition-colors border border-amber-400/40" title="Chuyển chế độ chữ to cho người cao tuổi">
+          <i class="fa-solid fa-text-height text-amber-300"></i>
+          <span id="font-btn-text">Chữ To</span>
+        </button>
+
+        <button id="tts-stop-all-btn" onclick="stopAllSpeech()" class="hidden bg-amber-500 hover:bg-amber-600 text-red-950 px-2.5 py-1 rounded-md text-xs font-bold items-center gap-1.5 transition-colors shadow-sm" title="Dừng đọc âm thanh ngay">
+          <i class="fa-solid fa-volume-xmark"></i>
+          <span>Dừng Đọc</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Khối Banner Chính -->
+    <div class="max-w-4xl mx-auto px-4 pt-4 pb-5">
+      <div class="flex items-start sm:items-center gap-3.5">
+        <!-- Huy hiệu biểu tượng trường học số -->
+        <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-amber-300 via-amber-400 to-amber-500 text-red-800 flex items-center justify-center shrink-0 shadow-md border-2 border-amber-200">
+          <div class="text-center">
+            <i class="fa-solid fa-star text-lg sm:text-xl text-red-700"></i>
+            <div class="text-[9px] font-black uppercase tracking-tighter text-red-900">QB 2026</div>
+          </div>
+        </div>
+
+        <div class="flex-1 min-w-0">
+          <div class="text-[11px] sm:text-xs font-bold text-amber-300 uppercase tracking-wide flex items-center gap-1.5">
+            <i class="fa-solid fa-award"></i>
+            <span>TRƯỜNG PTDTBT TH&THCS QUẢN BẠ</span>
+          </div>
+          <h1 class="text-lg sm:text-2xl font-extrabold tracking-tight text-white leading-tight mt-0.5">
+            SỔ TAY KỸ NĂNG SỐ BỎ TÚI
+          </h1>
+          <p class="text-xs sm:text-sm text-amber-100 font-medium mt-1 leading-snug">
+            Phong trào <strong class="text-amber-300 font-bold">“Bình dân học vụ số 2026”</strong> — Học sinh là chiến sĩ số của bản làng
+          </p>
+        </div>
+      </div>
+
+      <!-- Hộp trạng thái giọng nói đang đọc (Ẩn mặc định, hiện khi phát âm thanh) -->
+      <div id="audio-live-pill" class="hidden mt-3 bg-red-900/90 border border-amber-400/50 rounded-xl p-2.5 items-center justify-between shadow-inner">
+        <div class="flex items-center gap-3 min-w-0">
+          <!-- Hiệu ứng sóng âm -->
+          <div class="flex items-end gap-1 h-6 shrink-0 text-amber-300">
+            <div class="w-1 bg-amber-400 rounded-full wave-bar-1"></div>
+            <div class="w-1 bg-amber-300 rounded-full wave-bar-2"></div>
+            <div class="w-1 bg-amber-400 rounded-full wave-bar-3"></div>
+            <div class="w-1 bg-amber-300 rounded-full wave-bar-4"></div>
+          </div>
+          <div class="truncate">
+            <div class="text-xs font-bold text-amber-200">Đang đọc bài học giọng tiếng Việt (0.9x)...</div>
+            <div id="audio-current-label" class="text-[11px] text-white/90 truncate">Hướng dẫn số cho bà con và học sinh</div>
+          </div>
+        </div>
+        <button onclick="stopAllSpeech()" class="bg-amber-400 hover:bg-amber-300 text-red-900 text-xs font-bold px-3 py-1.5 rounded-lg shrink-0 flex items-center gap-1 shadow">
+          <i class="fa-solid fa-stop"></i>
+          <span>Tắt</span>
+        </button>
+      </div>
+
+      <!-- Lời nhắn ngắn động viên tinh thần vùng cao -->
+      <div class="mt-3.5 bg-black/20 rounded-xl p-2.5 sm:p-3 flex items-center gap-2.5 border border-white/10 text-xs text-amber-100">
+        <i class="fa-solid fa-bullhorn text-amber-300 text-base shrink-0"></i>
+        <span>Các em học sinh hãy dùng sổ tay này đọc to từng bước hoặc bấm <strong>Nút Loa 🔊</strong> để hướng dẫn bố mẹ, ông bà tại gia đình nhé!</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT WRAPPER ==================== -->
+  <main class="flex-1 max-w-4xl w-full mx-auto px-4 py-5 space-y-6">
+
+    <!-- THANH TỔNG HỢP TIẾN ĐỘ NHANH -->
+    <section class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-slate-200">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div>
+          <div class="text-xs font-semibold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
+            <i class="fa-solid fa-compass text-red-600"></i>
+            <span>Hành Trình Kỹ Năng Số Bản Làng</span>
+          </div>
+          <h2 class="text-base sm:text-lg font-bold text-slate-900 mt-0.5">
+            5 Chuyên Đề Thiết Thực & Nhiệm Vụ Chiến Sĩ Nhí
+          </h2>
+        </div>
+        <!-- Chỉ số nhanh -->
+        <div class="flex items-center gap-2">
+          <a href="#nhat-ky-section" class="bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300 px-3 py-1.5 rounded-xl text-xs font-bold flex items-center gap-2 transition-colors">
+            <i class="fa-solid fa-medal text-amber-600"></i>
+            <span>Nhật ký: <span id="quick-star-count" class="text-red-700">0/6</span> nhiệm vụ</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Phím điều hướng nhanh 5 Chuyên đề -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-3 mt-4">
+        <button onclick="switchTopic('vh-1')" id="nav-btn-vh-1" class="topic-nav-btn text-left p-3 rounded-xl border border-red-200 bg-red-50 text-red-900 transition-all hover:shadow-sm focus:outline-none">
+          <div class="w-8 h-8 rounded-lg bg-red-600 text-white flex items-center justify-center text-sm mb-2 shadow-sm">
+            <i class="fa-solid fa-id-card"></i>
+          </div>
+          <div class="text-xs font-bold line-clamp-1">1. BHYT VNeID</div>
+          <div class="text-[11px] text-slate-600 line-clamp-1">Khám chữa bệnh số</div>
+        </button>
+
+        <button onclick="switchTopic('vh-gplx')" id="nav-btn-vh-gplx" class="topic-nav-btn text-left p-3 rounded-xl border border-slate-200 bg-white text-slate-800 transition-all hover:bg-slate-50 hover:shadow-sm focus:outline-none">
+          <div class="w-8 h-8 rounded-lg bg-amber-600 text-white flex items-center justify-center text-sm mb-2 shadow-sm">
+            <i class="fa-solid fa-motorcycle"></i>
+          </div>
+          <div class="text-xs font-bold line-clamp-1">2. Giấy Phép Lái Xe</div>
+          <div class="text-[11px] text-slate-600 line-clamp-1">Xuất trình VNeID</div>
+        </button>
+
+        <button onclick="switchTopic('vh-2')" id="nav-btn-vh-2" class="topic-nav-btn text-left p-3 rounded-xl border border-slate-200 bg-white text-slate-800 transition-all hover:bg-slate-50 hover:shadow-sm focus:outline-none">
+          <div class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-sm mb-2 shadow-sm">
+            <i class="fa-solid fa-qrcode"></i>
+          </div>
+          <div class="text-xs font-bold line-clamp-1">3. QR Chợ Phiên</div>
+          <div class="text-[11px] text-slate-600 line-clamp-1">Thanh toán an toàn</div>
+        </button>
+
+        <button onclick="switchTopic('vh-3')" id="nav-btn-vh-3" class="topic-nav-btn text-left p-3 rounded-xl border border-slate-200 bg-white text-slate-800 transition-all hover:bg-slate-50 hover:shadow-sm focus:outline-none">
+          <div class="w-8 h-8 rounded-lg bg-red-700 text-white flex items-center justify-center text-sm mb-2 shadow-sm">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div class="text-xs font-bold line-clamp-1">4. Cảnh Báo Lừa Đảo</div>
+          <div class="text-[11px] text-slate-600 line-clamp-1">4 thủ đoạn kẻ xấu</div>
+        </button>
+
+        <button onclick="switchTopic('vh-4')" id="nav-btn-vh-4" class="topic-nav-btn text-left p-3 rounded-xl border border-slate-200 bg-white text-slate-800 transition-all hover:bg-slate-50 hover:shadow-sm focus:outline-none">
+          <div class="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center text-sm mb-2 shadow-sm">
+            <i class="fa-solid fa-stamp"></i>
+          </div>
+          <div class="text-xs font-bold line-clamp-1">5. Chứng Thực Giấy Tờ</div>
+          <div class="text-[11px] text-slate-600 line-clamp-1">Bản sao DVC & VNeID</div>
+        </button>
+      </div>
+    </section>
+
+    <!-- ==================== KHU VỰC 4 CHUYÊN ĐỀ SỐ ==================== -->
+    <div id="topics-container">
+
+      <!-- ==================== CHUYÊN ĐỀ 1 ==================== -->
+      <section id="topic-vh-1" class="topic-card bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+        <!-- Đầu đề chuyên đề -->
+        <div class="p-4 sm:p-5 bg-gradient-to-r from-red-50 via-amber-50/50 to-white border-b border-red-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-red-600 text-white flex items-center justify-center text-xl shrink-0 shadow">
+              <i class="fa-solid fa-id-card-clip"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-red-700 uppercase tracking-wide">Chuyên Đề 01 · Y Tế & Dân Cư Số</span>
+              <h3 class="text-base sm:text-xl font-bold text-slate-900 leading-snug">
+                Tra Cứu Thẻ BHYT & Hồ Sơ Công Dân Trên VNeID
+              </h3>
+            </div>
+          </div>
+
+          <!-- Nút phát loa toàn bộ bài học -->
+          <button onclick="speakTopic(1)" class="w-full sm:w-auto bg-red-700 hover:bg-red-800 text-white px-4 py-2 rounded-xl text-xs font-bold flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-95">
+            <i class="fa-solid fa-volume-high text-amber-300"></i>
+            <span>Nghe Toàn Bài 01</span>
+          </button>
+        </div>
+
+        <div class="p-4 sm:p-6 space-y-4">
+          <!-- Hộp ghi chú ý nghĩa thiết thực -->
+          <div class="bg-amber-50 border-l-4 border-amber-500 p-3.5 rounded-r-xl text-xs sm:text-sm text-amber-950">
+            <div class="font-bold flex items-center gap-1.5 mb-1 text-amber-900">
+              <i class="fa-solid fa-lightbulb text-amber-600"></i>
+              <span>Lợi ích thiết thực cho bà con bản làng:</span>
+            </div>
+            Khi đưa người nhà đi Trạm y tế xã Quản Bạ hoặc bệnh viện tuyến trên, chỉ cần mang điện thoại có VNeID, không lo quên thẻ giấy, rách thẻ hoặc ướt thẻ khi đi trời mưa!
+          </div>
+
+          <!-- Các bước hướng dẫn (Step by step) -->
+          <div class="space-y-4">
+            <!-- Bước 1 -->
+            <div class="step-item p-3.5 sm:p-4 rounded-2xl border border-slate-200 hover:border-red-300 bg-white hover:bg-red-50/10 transition-all space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-red-100 text-red-800 font-extrabold flex items-center justify-center shrink-0 text-sm">
+                  1
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="font-bold text-sm sm:text-base text-slate-900">Mở ứng dụng VNeID và Đăng nhập</div>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                    Mở ứng dụng VNeID trên màn hình điện thoại. Nhập mật khẩu đã đặt hoặc dùng ngón tay chạm vào cảm biến vân tay để mở khóa nhanh chóng.
+                  </p>
+                </div>
+                <button onclick="speakStep('Bước 1: Mở ứng dụng VNeID trên màn hình điện thoại. Nhập mật khẩu đã đặt hoặc chạm ngón tay vào cảm biến vân tay để mở khóa nhanh chóng.')" class="tts-step-btn w-9 h-9 rounded-lg bg-slate-100 hover:bg-red-100 text-red-700 flex items-center justify-center shrink-0 transition-colors" title="Nghe đọc bước 1">
+                  <i class="fa-solid fa-volume-high text-xs"></i>
+                </button>
+              </div>
+
+              <!-- HÌNH ẢNH TRỰC QUAN BƯỚC 1: MÀN HÌNH ĐĂNG NHẬP VNeID -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-3 sm:p-4 rounded-xl border border-slate-300 shadow-inner">
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pb-2 border-b border-slate-800">
+                  <span class="font-semibold text-amber-400"><i class="fa-solid fa-mobile-screen mr-1"></i> Màn hình điện thoại: Đăng nhập VNeID</span>
+                  <span><i class="fa-solid fa-wifi mr-1"></i><i class="fa-solid fa-battery-full"></i> 09:30</span>
+                </div>
+
+                <div class="max-w-xs mx-auto py-3 px-4 bg-red-950/40 rounded-xl border border-red-900/50 mt-2 text-center relative">
+                  <!-- Logo VNeID -->
+                  <div class="w-12 h-12 mx-auto rounded-full bg-red-600 border-2 border-amber-400 flex items-center justify-center text-amber-300 text-xl shadow">
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="text-xs font-black text-amber-400 mt-1 uppercase tracking-wider">VNeID ĐỊNH DANH ĐIỆN TỬ</div>
+                  <div class="text-[11px] text-slate-300 mt-1 font-mono">082098000123 · SÙNG THỊ DÍNH</div>
+
+                  <!-- Ô Mật khẩu -->
+                  <div class="mt-2.5 bg-slate-900/90 border border-slate-700 rounded-lg p-2 text-center text-slate-400 text-xs tracking-widest font-mono">
+                    ••••••••
+                  </div>
+
+                  <!-- NÚT BẤM ĐƯỢC ĐÁNH DẤU: VÂN TAY & ĐĂNG NHẬP -->
+                  <div class="mt-3 relative">
+                    <!-- Vùng đánh dấu viền đỏ nhấp nháy -->
+                    <div class="p-2 rounded-xl border-2 border-red-500 bg-red-500/10 ring-4 ring-red-500/30 animate-pulse relative">
+                      <!-- Biển chỉ dẫn nút bấm -->
+                      <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow whitespace-nowrap flex items-center gap-1">
+                        <i class="fa-solid fa-hand-pointer animate-bounce"></i>
+                        <span>ĐÁNH DẤU: CHẠM VÀO ĐÂY</span>
+                      </div>
+
+                      <div class="flex items-center justify-center gap-3 pt-1">
+                        <div class="w-10 h-10 rounded-full bg-red-600/30 border border-red-400 flex items-center justify-center text-red-400 text-lg">
+                          <i class="fa-solid fa-fingerprint"></i>
+                        </div>
+                        <div class="bg-red-600 text-white font-extrabold text-xs px-4 py-2 rounded-lg shadow">
+                          ĐĂNG NHẬP
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="text-center mt-2">
+                  <span class="inline-block bg-amber-400/20 text-amber-300 text-[11px] px-2.5 py-0.5 rounded-full font-medium border border-amber-400/30">
+                    <i class="fa-solid fa-circle-info mr-1"></i> Chỉ cần chạm ngón tay vào ô vân tay hoặc bấm nút ĐĂNG NHẬP màu đỏ
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bước 2 -->
+            <div class="step-item p-3.5 sm:p-4 rounded-2xl border border-slate-200 hover:border-red-300 bg-white hover:bg-red-50/10 transition-all space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-red-100 text-red-800 font-extrabold flex items-center justify-center shrink-0 text-sm">
+                  2
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="font-bold text-sm sm:text-base text-slate-900">Chọn mục “Ví giấy tờ”</div>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                    Nhìn xuống hàng dưới cùng của màn hình điện thoại, bấm vào biểu tượng chiếc ví có chữ <strong>“Ví giấy tờ”</strong>.
+                  </p>
+                </div>
+                <button onclick="speakStep('Bước 2: Nhìn xuống hàng dưới cùng của màn hình điện thoại, bấm vào biểu tượng chiếc ví có chữ Ví giấy tờ.')" class="tts-step-btn w-9 h-9 rounded-lg bg-slate-100 hover:bg-red-100 text-red-700 flex items-center justify-center shrink-0 transition-colors" title="Nghe đọc bước 2">
+                  <i class="fa-solid fa-volume-high text-xs"></i>
+                </button>
+              </div>
+
+              <!-- HÌNH ẢNH TRỰC QUAN BƯỚC 2: MÀN HÌNH CHÍNH VNeID VỚI NÚT VÍ GIẤY TỜ ĐƯỢC ĐÁNH DẤU -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-3 sm:p-4 rounded-xl border border-slate-300 shadow-inner">
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pb-2 border-b border-slate-800">
+                  <span class="font-semibold text-amber-400"><i class="fa-solid fa-mobile-screen mr-1"></i> Màn hình chính VNeID</span>
+                  <span><i class="fa-solid fa-wifi mr-1"></i><i class="fa-solid fa-battery-full"></i> 09:31</span>
+                </div>
+
+                <div class="max-w-xs mx-auto py-2 px-3 bg-slate-900/80 rounded-xl border border-slate-800 mt-2 space-y-2">
+                  <!-- Header App -->
+                  <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+                    <div class="flex items-center gap-2">
+                      <div class="w-7 h-7 rounded-full bg-red-700 text-amber-300 flex items-center justify-center text-xs font-bold">
+                        ★
+                      </div>
+                      <div class="text-[11px] text-white font-bold">SÙNG THỊ DÍNH</div>
+                    </div>
+                    <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-1.5 py-0.5 rounded font-mono">Định danh cấp 2</span>
+                  </div>
+
+                  <!-- Khung giấy tờ giả lập -->
+                  <div class="p-2.5 rounded-lg bg-slate-800/60 border border-slate-700/60 text-[11px] text-slate-300 flex items-center justify-between">
+                    <span><i class="fa-solid fa-id-card text-amber-400 mr-1.5"></i> Căn cước công dân</span>
+                    <span class="text-slate-400 text-[10px]">Đã tích hợp</span>
+                  </div>
+
+                  <!-- THANH ĐIỀU HƯỚNG DƯỚI ĐÁY VỚI NÚT "VÍ GIẤY TỜ" ĐƯỢC ĐÁNH DẤU RỰC RỠ -->
+                  <div class="pt-2">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1 text-center">Thanh công cụ dưới đáy màn hình:</div>
+                    <div class="grid grid-cols-4 gap-1 p-1 bg-black/60 rounded-xl border border-slate-700 items-end">
+                      <!-- Nút 1: Trang chủ -->
+                      <div class="text-center p-1.5 text-slate-400 opacity-60">
+                        <i class="fa-solid fa-house text-sm"></i>
+                        <div class="text-[9px] mt-0.5">Trang chủ</div>
+                      </div>
+
+                      <!-- NÚT 2: VÍ GIẤY TỜ (ĐÁNH DẤU CHỌN) -->
+                      <div class="text-center p-1.5 rounded-lg border-2 border-red-500 bg-red-600 text-white font-black ring-4 ring-red-400/50 relative shadow-lg">
+                        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-400 text-red-950 text-[9px] font-black px-1.5 py-0.2 rounded-full uppercase whitespace-nowrap shadow">
+                          👉 BẤM ĐÂY
+                        </div>
+                        <i class="fa-solid fa-wallet text-sm text-amber-300"></i>
+                        <div class="text-[9px] mt-0.5 font-bold">Ví giấy tờ</div>
+                      </div>
+
+                      <!-- Nút 3: Dịch vụ công -->
+                      <div class="text-center p-1.5 text-slate-400 opacity-60">
+                        <i class="fa-solid fa-file-lines text-sm"></i>
+                        <div class="text-[9px] mt-0.5">Dịch vụ</div>
+                      </div>
+
+                      <!-- Nút 4: Cài đặt -->
+                      <div class="text-center p-1.5 text-slate-400 opacity-60">
+                        <i class="fa-solid fa-gear text-sm"></i>
+                        <div class="text-[9px] mt-0.5">Cài đặt</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="text-center mt-2">
+                  <span class="inline-block bg-amber-400/20 text-amber-300 text-[11px] px-2.5 py-0.5 rounded-full font-medium border border-amber-400/30">
+                    <i class="fa-solid fa-arrow-pointer mr-1"></i> Bấm vào nút hình chiếc ví có chữ <strong>Ví giấy tờ</strong> màu đỏ nổi bật
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bước 3 -->
+            <div class="step-item p-3.5 sm:p-4 rounded-2xl border border-slate-200 hover:border-red-300 bg-white hover:bg-red-50/10 transition-all space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-red-100 text-red-800 font-extrabold flex items-center justify-center shrink-0 text-sm">
+                  3
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="font-bold text-sm sm:text-base text-slate-900">Nhấn vào “Thẻ bảo hiểm y tế”</div>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                    Chọn dòng “Thẻ BHYT”. Nếu máy hỏi mã khóa 6 số (passcode), các em hãy giúp bố mẹ nhập 6 số bí mật để mở ra thông tin thẻ.
+                  </p>
+                </div>
+                <button onclick="speakStep('Bước 3: Chọn dòng Thẻ bảo hiểm y tế. Nếu máy hỏi mã khóa 6 số, hãy nhập 6 số bí mật để mở ra thông tin thẻ.')" class="tts-step-btn w-9 h-9 rounded-lg bg-slate-100 hover:bg-red-100 text-red-700 flex items-center justify-center shrink-0 transition-colors" title="Nghe đọc bước 3">
+                  <i class="fa-solid fa-volume-high text-xs"></i>
+                </button>
+              </div>
+
+              <!-- HÌNH ẢNH TRỰC QUAN BƯỚC 3: MỤC THẺ BHYT TRONG VÍ ĐƯỢC ĐÁNH DẤU -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-3 sm:p-4 rounded-xl border border-slate-300 shadow-inner">
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pb-2 border-b border-slate-800">
+                  <span class="font-semibold text-amber-400"><i class="fa-solid fa-wallet mr-1"></i> Danh sách trong Ví giấy tờ</span>
+                  <span><i class="fa-solid fa-wifi mr-1"></i><i class="fa-solid fa-battery-full"></i> 09:32</span>
+                </div>
+
+                <div class="max-w-xs mx-auto py-2 px-3 bg-slate-900/80 rounded-xl border border-slate-800 mt-2 space-y-2">
+                  <!-- Giấy tờ 1 -->
+                  <div class="p-2.5 rounded-lg bg-slate-800/40 text-slate-400 text-xs flex items-center justify-between opacity-60">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-id-card text-slate-400"></i> Căn cước công dân</span>
+                    <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                  </div>
+
+                  <!-- GIẤY TỜ 2: THẺ BHYT (ĐƯỢC KHOANH TRÒN / ĐÁNH DẤU CHỌN RỰC RỠ) -->
+                  <div class="p-3 rounded-xl border-2 border-amber-400 bg-gradient-to-r from-red-900/80 to-amber-950/80 text-white font-bold ring-4 ring-red-500/40 shadow-xl relative animate-pulse">
+                    <div class="absolute -top-2.5 right-3 bg-red-600 text-white text-[9px] font-black px-2 py-0.5 rounded-full uppercase tracking-wider shadow">
+                      👉 CHẠM VÀO ĐÂY
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center gap-2.5">
+                        <div class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-sm shadow">
+                          <i class="fa-solid fa-hospital-user"></i>
+                        </div>
+                        <div>
+                          <div class="text-xs font-black text-amber-300">Thẻ bảo hiểm y tế (BHYT)</div>
+                          <div class="text-[10px] text-slate-300 font-normal">Mã thẻ: GD 4 02...</div>
+                        </div>
+                      </div>
+                      <i class="fa-solid fa-circle-check text-emerald-400 text-base"></i>
+                    </div>
+                  </div>
+
+                  <!-- Giấy tờ 3 -->
+                  <div class="p-2.5 rounded-lg bg-slate-800/40 text-slate-400 text-xs flex items-center justify-between opacity-60">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-id-badge text-slate-400"></i> Giấy phép lái xe</span>
+                    <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                  </div>
+                </div>
+
+                <div class="text-center mt-2">
+                  <span class="inline-block bg-amber-400/20 text-amber-300 text-[11px] px-2.5 py-0.5 rounded-full font-medium border border-amber-400/30">
+                    <i class="fa-solid fa-hand-pointer mr-1"></i> Chạm vào dòng có biểu tượng dấu thập y tế xanh <strong>Thẻ bảo hiểm y tế</strong>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bước 4 -->
+            <div class="step-item p-3.5 sm:p-4 rounded-2xl border border-slate-200 hover:border-red-300 bg-white hover:bg-red-50/10 transition-all space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-red-100 text-red-800 font-extrabold flex items-center justify-center shrink-0 text-sm">
+                  4
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="font-bold text-sm sm:text-base text-slate-900">Đưa mã QR cho Cán bộ y tế quét</div>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                    Trên màn hình sẽ hiện rõ họ tên, mã số thẻ và mã vuông QR. Đưa màn hình cho bác sĩ hoặc điều dưỡng tại trạm y tế quét máy là xong thủ tục đăng ký khám.
+                  </p>
+                </div>
+                <button onclick="speakStep('Bước 4: Trên màn hình sẽ hiện rõ họ tên, mã số thẻ và mã vuông QR. Đưa màn hình cho bác sĩ hoặc cán bộ y tế quét là hoàn tất khám bệnh.')" class="tts-step-btn w-9 h-9 rounded-lg bg-slate-100 hover:bg-red-100 text-red-700 flex items-center justify-center shrink-0 transition-colors" title="Nghe đọc bước 4">
+                  <i class="fa-solid fa-volume-high text-xs"></i>
+                </button>
+              </div>
+
+              <!-- HÌNH ẢNH TRỰC QUAN BƯỚC 4: THẺ BHYT VỚI MÃ QR ĐƯỢC ĐÁNH DẤU QUÉT -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-3 sm:p-4 rounded-xl border border-slate-300 shadow-inner">
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pb-2 border-b border-slate-800">
+                  <span class="font-semibold text-emerald-400"><i class="fa-solid fa-qrcode mr-1"></i> Màn hình Thẻ BHYT Điện Tử</span>
+                  <span><i class="fa-solid fa-wifi mr-1"></i><i class="fa-solid fa-battery-full"></i> 09:33</span>
+                </div>
+
+                <div class="max-w-xs mx-auto py-3 px-4 bg-gradient-to-br from-emerald-950 via-teal-900 to-slate-900 rounded-xl border border-emerald-500/50 mt-2 text-center relative shadow-lg">
+                  <div class="text-[10px] font-bold text-emerald-300 uppercase tracking-wider">BẢO HIỂM XÃ HỘI VIỆT NAM</div>
+                  <div class="text-xs font-black text-white mt-0.5">THẺ BẢO HIỂM Y TẾ</div>
+
+                  <!-- KHUNG MÃ QR ĐƯỢC ĐÁNH DẤU NỔI BẬT ĐỂ ĐƯA BÁC SĨ QUÉT -->
+                  <div class="my-3 p-3 bg-white rounded-xl inline-block border-4 border-red-500 ring-4 ring-red-400/50 shadow-2xl relative animate-pulse">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[9px] font-black px-2 py-0.5 rounded-full uppercase whitespace-nowrap shadow">
+                      👉 ĐƯA MÃ NÀY QUÉT
+                    </div>
+                    <i class="fa-solid fa-qrcode text-6xl text-slate-950"></i>
+                  </div>
+
+                  <div class="text-xs font-bold text-white">SÙNG THỊ DÍNH</div>
+                  <div class="text-[11px] font-mono text-emerald-200">Mã thẻ: GD 4 02 02 2026 888</div>
+                  <div class="text-[10px] text-slate-300 mt-1">Nơi KCB ban đầu: Trạm Y tế xã Quản Bạ</div>
+                </div>
+
+                <div class="text-center mt-2">
+                  <span class="inline-block bg-emerald-400/20 text-emerald-300 text-[11px] px-2.5 py-0.5 rounded-full font-medium border border-emerald-400/30">
+                    <i class="fa-solid fa-circle-check mr-1"></i> Giơ mã QR có viền đỏ này thẳng vào máy quét tại bàn tiếp đón Trạm Y Tế
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mẹo bản làng nhỏ -->
+          <div class="bg-red-50 rounded-xl p-3 flex items-start gap-2.5 text-xs text-red-900 border border-red-200">
+            <i class="fa-solid fa-hand-holding-heart text-red-600 text-base mt-0.5"></i>
+            <div>
+              <strong>Kinh nghiệm bỏ túi:</strong> Lúc ở nhà có mạng Wifi hoặc 4G khỏe, các em hãy chụp ảnh màn hình thẻ BHYT lưu vào bộ sưu tập ảnh. Khi đến trạm y tế vùng sâu lỡ mất mạng vẫn mở ảnh ra cho bác sĩ quét được!
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== CHUYÊN ĐỀ: GIẤY PHÉP LÁI XE TRÊN VNeID ==================== -->
+      <section id="topic-vh-gplx" class="topic-card hidden bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+        <div class="p-4 sm:p-5 bg-gradient-to-r from-amber-50 via-orange-50/50 to-white border-b border-amber-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-amber-600 text-white flex items-center justify-center text-xl shrink-0 shadow">
+              <i class="fa-solid fa-motorcycle"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-amber-700 uppercase tracking-wide">Chuyên Đề 02 · Giao Thông & Giấy Tờ Số Hợp Pháp</span>
+              <h3 class="text-base sm:text-xl font-bold text-slate-900 leading-snug">
+                Xuất Trình Giấy Phép Lái Xe (GPLX) & Đăng Ký Xe Trên VNeID
+              </h3>
+            </div>
+          </div>
+
+          <button onclick="speakTopic('gplx')" class="w-full sm:w-auto bg-amber-700 hover:bg-amber-800 text-white px-4 py-2 rounded-xl text-xs font-bold flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-95">
+            <i class="fa-solid fa-volume-high text-amber-300"></i>
+            <span>Nghe Toàn Bài GPLX</span>
+          </button>
+        </div>
+
+        <div class="p-4 sm:p-6 space-y-4">
+          <!-- Hộp ghi chú ý nghĩa thiết thực -->
+          <div class="bg-amber-50 border-l-4 border-amber-500 p-3.5 rounded-r-xl text-xs sm:text-sm text-amber-950">
+            <div class="font-bold flex items-center gap-1.5 mb-1 text-amber-900">
+              <i class="fa-solid fa-road text-amber-600"></i>
+              <span>Quy định pháp luật mới năm 2026 cho người đi xe máy:</span>
+            </div>
+            Khi điều khiển xe máy đi chợ phiên, đi nương hoặc ra trung tâm huyện Quản Bạ, lỡ quên bằng lái xe giấy ở nhà, bà con chỉ cần mở VNeID xuất trình Giấy phép lái xe điện tử đã tích hợp cho Cảnh sát Giao thông kiểm tra. Thông tin GPLX trên VNeID có giá trị pháp lý tương đương bản giấy!
+          </div>
+
+          <!-- Các bước hướng dẫn GPLX (Step by step) -->
+          <div class="space-y-4">
+            <!-- Bước 1 -->
+            <div class="step-item p-3.5 sm:p-4 rounded-2xl border border-slate-200 hover:border-amber-300 bg-white hover:bg-amber-50/10 transition-all space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-900 font-extrabold flex items-center justify-center shrink-0 text-sm">
+                  1
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="font-bold text-sm sm:text-base text-slate-900">Mở VNeID và Chọn mục “Ví giấy tờ”</div>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                    Mở ứng dụng VNeID trên điện thoại, đăng nhập bằng mật khẩu hoặc vân tay, sau đó bấm vào biểu tượng chiếc ví có chữ <strong>“Ví giấy tờ”</strong> ở dưới cùng màn hình.
+                  </p>
+                </div>
+                <button onclick="speakStep('Bước 1: Mở ứng dụng VNeID trên điện thoại, đăng nhập rồi bấm vào nút Ví giấy tờ ở hàng dưới cùng của màn hình.')" class="tts-step-btn w-9 h-9 rounded-lg bg-slate-100 hover:bg-amber-100 text-amber-800 flex items-center justify-center shrink-0 transition-colors" title="Nghe đọc bước 1">
+                  <i class="fa-solid fa-volume-high text-xs"></i>
+                </button>
+              </div>
+
+              <!-- HÌNH ẢNH TRỰC QUAN BƯỚC 1: NÚT VÍ GIẤY TỜ ĐƯỢC ĐÁNH DẤU CHỌN -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-3 sm:p-4 rounded-xl border border-slate-300 shadow-inner">
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pb-2 border-b border-slate-800">
+                  <span class="font-semibold text-amber-400"><i class="fa-solid fa-mobile-screen mr-1"></i> Màn hình chính VNeID</span>
+                  <span><i class="fa-solid fa-wifi mr-1"></i><i class="fa-solid fa-battery-full"></i> 09:35</span>
+                </div>
+
+                <div class="max-w-xs mx-auto py-2 px-3 bg-slate-900/90 rounded-xl border border-slate-800 mt-2 space-y-3">
+                  <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+                    <div class="flex items-center gap-2">
+                      <div class="w-7 h-7 rounded-full bg-red-700 text-amber-300 flex items-center justify-center text-xs font-bold">★</div>
+                      <div class="text-[11px] text-white font-bold">VÀNG SEO PAO</div>
+                    </div>
+                    <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-1.5 py-0.5 rounded font-mono">Định danh mức 2</span>
+                  </div>
+
+                  <!-- Thanh đáy với nút Ví giấy tờ khoanh đỏ -->
+                  <div class="pt-1">
+                    <div class="text-[10px] font-bold text-slate-400 mb-1 text-center">Bấm vào biểu tượng ví ở đáy:</div>
+                    <div class="grid grid-cols-4 gap-1 p-1 bg-black/60 rounded-xl border border-slate-700 items-end">
+                      <div class="text-center p-1.5 text-slate-400 opacity-60">
+                        <i class="fa-solid fa-house text-sm"></i>
+                        <div class="text-[9px] mt-0.5">Trang chủ</div>
+                      </div>
+
+                      <!-- NÚT ĐÁNH DẤU -->
+                      <div class="text-center p-1.5 rounded-lg border-2 border-red-500 bg-amber-600 text-white font-black ring-4 ring-red-400/50 relative shadow-lg">
+                        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[9px] font-black px-1.5 py-0.2 rounded-full uppercase whitespace-nowrap shadow">
+                          👉 BẤM ĐÂY
+                        </div>
+                        <i class="fa-solid fa-wallet text-sm text-amber-200"></i>
+                        <div class="text-[9px] mt-0.5 font-bold">Ví giấy tờ</div>
+                      </div>
+
+                      <div class="text-center p-1.5 text-slate-400 opacity-60">
+                        <i class="fa-solid fa-file-lines text-sm"></i>
+                        <div class="text-[9px] mt-0.5">Dịch vụ</div>
+                      </div>
+
+                      <div class="text-center p-1.5 text-slate-400 opacity-60">
+                        <i class="fa-solid fa-gear text-sm"></i>
+                        <div class="text-[9px] mt-0.5">Cài đặt</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="text-center mt-2">
+                  <span class="inline-block bg-amber-400/20 text-amber-300 text-[11px] px-2.5 py-0.5 rounded-full font-medium border border-amber-400/30">
+                    <i class="fa-solid fa-hand-pointer mr-1"></i> Bấm vào nút <strong>Ví giấy tờ</strong> màu vàng cam nổi bật
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bước 2 -->
+            <div class="step-item p-3.5 sm:p-4 rounded-2xl border border-slate-200 hover:border-amber-300 bg-white hover:bg-amber-50/10 transition-all space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-900 font-extrabold flex items-center justify-center shrink-0 text-sm">
+                  2
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="font-bold text-sm sm:text-base text-slate-900">Nhấn vào dòng “Giấy phép lái xe”</div>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                    Trong danh sách các loại giấy tờ tích hợp, tìm và bấm vào dòng <strong>“Giấy phép lái xe”</strong> (biểu tượng xe máy hoặc ô tô).
+                  </p>
+                </div>
+                <button onclick="speakStep('Bước 2: Trong danh sách Ví giấy tờ, chạm vào dòng Giấy phép lái xe có biểu tượng xe máy.')" class="tts-step-btn w-9 h-9 rounded-lg bg-slate-100 hover:bg-amber-100 text-amber-800 flex items-center justify-center shrink-0 transition-colors" title="Nghe đọc bước 2">
+                  <i class="fa-solid fa-volume-high text-xs"></i>
+                </button>
+              </div>
+
+              <!-- HÌNH ẢNH TRỰC QUAN BƯỚC 2: DÒNG GIẤY PHÉP LÁI XE ĐƯỢC ĐÁNH DẤU CHỌN -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-3 sm:p-4 rounded-xl border border-slate-300 shadow-inner">
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pb-2 border-b border-slate-800">
+                  <span class="font-semibold text-amber-400"><i class="fa-solid fa-wallet mr-1"></i> Danh sách trong Ví giấy tờ</span>
+                  <span><i class="fa-solid fa-wifi mr-1"></i><i class="fa-solid fa-battery-full"></i> 09:36</span>
+                </div>
+
+                <div class="max-w-xs mx-auto py-2 px-3 bg-slate-900/90 rounded-xl border border-slate-800 mt-2 space-y-2">
+                  <!-- Giấy tờ 1: CCCD -->
+                  <div class="p-2.5 rounded-lg bg-slate-800/40 text-slate-400 text-xs flex items-center justify-between opacity-60">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-id-card text-slate-400"></i> Căn cước công dân</span>
+                    <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                  </div>
+
+                  <!-- GIẤY TỜ 2: GIẤY PHÉP LÁI XE (ĐƯỢC KHOANH ĐỎ ĐÁNH DẤU CHỌN RỰC RỠ) -->
+                  <div class="p-3 rounded-xl border-2 border-amber-400 bg-gradient-to-r from-amber-900/80 to-yellow-950/80 text-white font-bold ring-4 ring-red-500/40 shadow-xl relative animate-pulse">
+                    <div class="absolute -top-2.5 right-3 bg-red-600 text-white text-[9px] font-black px-2 py-0.5 rounded-full uppercase tracking-wider shadow">
+                      👉 CHẠM VÀO ĐÂY
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center gap-2.5">
+                        <div class="w-9 h-9 rounded-lg bg-amber-500 text-red-950 flex items-center justify-center text-base shadow">
+                          <i class="fa-solid fa-id-badge"></i>
+                        </div>
+                        <div class="text-left">
+                          <div class="text-xs font-black text-amber-300">Giấy phép lái xe (GPLX)</div>
+                          <div class="text-[10px] text-slate-300 font-normal">Hạng A1 · Số: 220198000123</div>
+                        </div>
+                      </div>
+                      <span class="text-[10px] bg-emerald-500/30 text-emerald-300 px-1.5 py-0.5 rounded border border-emerald-400/30">Đã xác thực</span>
+                    </div>
+                  </div>
+
+                  <!-- Giấy tờ 3: Thẻ BHYT -->
+                  <div class="p-2.5 rounded-lg bg-slate-800/40 text-slate-400 text-xs flex items-center justify-between opacity-60">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-hospital-user text-slate-400"></i> Thẻ bảo hiểm y tế</span>
+                    <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                  </div>
+                </div>
+
+                <div class="text-center mt-2">
+                  <span class="inline-block bg-amber-400/20 text-amber-300 text-[11px] px-2.5 py-0.5 rounded-full font-medium border border-amber-400/30">
+                    <i class="fa-solid fa-hand-pointer mr-1"></i> Bấm chọn dòng <strong>Giấy phép lái xe</strong> có biểu tượng chiếc thẻ màu vàng
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bước 3 -->
+            <div class="step-item p-3.5 sm:p-4 rounded-2xl border border-slate-200 hover:border-amber-300 bg-white hover:bg-amber-50/10 transition-all space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-900 font-extrabold flex items-center justify-center shrink-0 text-sm">
+                  3
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="font-bold text-sm sm:text-base text-slate-900">Nhập mã số bảo vệ (Passcode 6 số)</div>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                    Để bảo mật thông tin cá nhân, ứng dụng sẽ yêu cầu nhập 6 số mật mã bảo vệ (Passcode) mà gia đình đã cài đặt khi làm định danh mức 2.
+                  </p>
+                </div>
+                <button onclick="speakStep('Bước 3: Nhập mã số bảo vệ gồm 6 số bí mật để mở khóa thông tin giấy phép lái xe.')" class="tts-step-btn w-9 h-9 rounded-lg bg-slate-100 hover:bg-amber-100 text-amber-800 flex items-center justify-center shrink-0 transition-colors" title="Nghe đọc bước 3">
+                  <i class="fa-solid fa-volume-high text-xs"></i>
+                </button>
+              </div>
+
+              <!-- HÌNH ẢNH TRỰC QUAN BƯỚC 3: MÀN HÌNH NHẬP MÃ PASSCODE ĐƯỢC ĐÁNH DẤU -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-3 sm:p-4 rounded-xl border border-slate-300 shadow-inner">
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pb-2 border-b border-slate-800">
+                  <span class="font-semibold text-amber-400"><i class="fa-solid fa-lock mr-1"></i> Màn hình bảo mật VNeID</span>
+                  <span><i class="fa-solid fa-shield-halved text-emerald-400"></i> An toàn</span>
+                </div>
+
+                <div class="max-w-xs mx-auto py-3 px-3 bg-slate-900/90 rounded-xl border border-slate-800 mt-2 text-center space-y-2">
+                  <div class="w-10 h-10 mx-auto rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-lg">
+                    <i class="fa-solid fa-key"></i>
+                  </div>
+                  <div class="text-xs font-bold text-white">Nhập passcode mở khóa giấy tờ:</div>
+
+                  <!-- 6 Ô chấm tròn bảo mật được khoanh viền đỏ -->
+                  <div class="p-2.5 rounded-xl border-2 border-red-500 bg-red-950/40 ring-4 ring-red-400/40 relative animate-pulse my-1">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[9px] font-black px-2 py-0.2 rounded-full uppercase whitespace-nowrap shadow">
+                      👉 NHẬP 6 SỐ BÍ MẬT
+                    </div>
+                    <div class="flex justify-center gap-2.5 py-1">
+                      <div class="w-3.5 h-3.5 rounded-full bg-amber-400"></div>
+                      <div class="w-3.5 h-3.5 rounded-full bg-amber-400"></div>
+                      <div class="w-3.5 h-3.5 rounded-full bg-amber-400"></div>
+                      <div class="w-3.5 h-3.5 rounded-full bg-amber-400"></div>
+                      <div class="w-3.5 h-3.5 rounded-full bg-slate-600"></div>
+                      <div class="w-3.5 h-3.5 rounded-full bg-slate-600"></div>
+                    </div>
+                  </div>
+
+                  <div class="text-[10px] text-slate-400">Hoặc chạm cảm biến vân tay để mở nhanh</div>
+                </div>
+
+                <div class="text-center mt-2">
+                  <span class="inline-block bg-amber-400/20 text-amber-300 text-[11px] px-2.5 py-0.5 rounded-full font-medium border border-amber-400/30">
+                    <i class="fa-solid fa-circle-info mr-1"></i> Các em học sinh hãy ghi nhớ giúp ông bà, bố mẹ 6 số passcode này nhé
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bước 4 -->
+            <div class="step-item p-3.5 sm:p-4 rounded-2xl border-2 border-amber-400 bg-amber-50/20 transition-all space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-amber-600 text-white font-extrabold flex items-center justify-center shrink-0 text-sm shadow">
+                  4
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="font-extrabold text-sm sm:text-base text-amber-950 flex items-center gap-1.5">
+                    <span>XUẤT TRÌNH BẰNG LÁI ĐIỆN TỬ CHO CẢNH SÁT GIAO THÔNG</span>
+                    <span class="bg-emerald-600 text-white text-[10px] px-1.5 py-0.5 rounded uppercase">Hợp pháp 100%</span>
+                  </div>
+                  <p class="text-xs sm:text-sm text-slate-700 mt-1 font-medium">
+                    Màn hình sẽ hiển thị đầy đủ thẻ Giấy Phép Lái Xe điện tử hạng A1 (xe máy), họ tên, ảnh chân dung và mã QR. Đưa màn hình cho Cán bộ CSGT quét kiểm tra trên máy chuyên dụng là hoàn tất!
+                  </p>
+                </div>
+                <button onclick="speakStep('Bước 4: Màn hình hiện thẻ Giấy phép lái xe điện tử và mã QR. Đưa màn hình cho Cảnh sát giao thông quét kiểm tra là hợp lệ hoàn toàn.')" class="tts-step-btn w-9 h-9 rounded-lg bg-amber-200 hover:bg-amber-300 text-amber-900 flex items-center justify-center shrink-0 transition-colors" title="Nghe đọc bước 4">
+                  <i class="fa-solid fa-volume-high text-xs"></i>
+                </button>
+              </div>
+
+              <!-- HÌNH ẢNH TRỰC QUAN BƯỚC 4: THẺ GPLX ĐIỆN TỬ VỚI MÃ QR VÀ THÔNG TIN ĐƯỢC ĐÁNH DẤU -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-3 sm:p-4 rounded-xl border border-slate-300 shadow-inner">
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pb-2 border-b border-slate-800">
+                  <span class="font-bold text-amber-400"><i class="fa-solid fa-id-card mr-1"></i> Màn hình Xuất Trình GPLX Hợp Pháp</span>
+                  <span class="text-emerald-400 font-mono"><i class="fa-solid fa-check-circle mr-1"></i> Có giá trị pháp lý</span>
+                </div>
+
+                <!-- KHUNG MÔ PHỎNG THẺ BẰNG LÁI XE VÀNG PET CHUẨN QUỐC GIA -->
+                <div class="max-w-xs mx-auto py-3 px-3 bg-[#fdf6e2] rounded-xl border-2 border-amber-500 shadow-2xl text-slate-900 mt-2 space-y-2 relative">
+                  <!-- Tiêu đề thẻ -->
+                  <div class="text-center border-b border-amber-300 pb-1.5">
+                    <div class="text-[9px] font-black uppercase text-red-700 tracking-wider">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</div>
+                    <div class="text-[8px] font-semibold text-slate-700">BỘ GIAO THÔNG VẬN TẢI · BỘ CÔNG AN</div>
+                    <div class="text-xs font-black uppercase text-red-800 mt-0.5 tracking-tight">GIẤY PHÉP LÁI XE / DRIVING LICENCE</div>
+                  </div>
+
+                  <div class="flex items-center gap-2.5 pt-1 text-left">
+                    <!-- Ảnh chân dung giả lập -->
+                    <div class="w-16 h-20 bg-slate-300 rounded border border-slate-400 flex flex-col items-center justify-center text-slate-500 shrink-0">
+                      <i class="fa-solid fa-user text-2xl"></i>
+                      <span class="text-[7px] font-bold mt-1 text-slate-600">ẢNH 3x4</span>
+                    </div>
+
+                    <div class="space-y-0.5 text-[10px] leading-tight">
+                      <div>Số: <strong class="text-red-700 font-mono font-bold text-xs">220198000123</strong></div>
+                      <div>Họ tên: <strong class="text-slate-900 font-black text-xs">VÀNG SEO PAO</strong></div>
+                      <div>Hạng: <span class="bg-amber-400/60 font-black text-red-950 px-1.5 py-0.2 rounded text-[11px]">A1 (Xe máy)</span></div>
+                      <div>Giá trị: <strong class="text-emerald-800 font-bold">Không thời hạn</strong></div>
+                      <div class="text-[9px] text-emerald-700 font-bold flex items-center gap-1">
+                        <i class="fa-solid fa-shield-check"></i> Đã xác thực trên VNeID
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- MÃ QR ĐƯỢC ĐÁNH DẤU ĐỂ CSGT QUÉT KIỂM TRA -->
+                  <div class="pt-1.5 text-center">
+                    <div class="p-2 bg-white rounded-xl inline-block border-2 border-red-500 ring-4 ring-red-400/50 relative animate-pulse shadow-md">
+                      <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[8px] font-black px-2 py-0.2 rounded-full uppercase whitespace-nowrap shadow">
+                        👉 ĐƯA MÃ QR CHO CSGT QUÉT
+                      </div>
+                      <i class="fa-solid fa-qrcode text-5xl text-slate-900"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="text-center mt-2">
+                  <span class="inline-block bg-emerald-400/20 text-emerald-300 text-[11px] px-2.5 py-0.5 rounded-full font-bold border border-emerald-400/30">
+                    <i class="fa-solid fa-circle-check mr-1"></i> Cán bộ CSGT quét mã QR này là thấy ngay bằng lái hợp lệ, không bị phạt lỗi không mang giấy tờ
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- KHU VỰC TƯƠNG TÁC: MÁY TẬP XUẤT TRÌNH GPLX ẢO -->
+          <div class="mt-4 p-4 rounded-2xl bg-gradient-to-br from-amber-950 via-orange-950 to-slate-950 text-white border border-amber-600 shadow-md">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-lg bg-amber-500 text-slate-950 flex items-center justify-center font-bold">
+                  <i class="fa-solid fa-id-card"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-amber-200">Góc Tập Luyện: Thử Xuất Trình GPLX Cho CSGT</h4>
+                  <p class="text-[11px] text-amber-300">Tập thao tác để tự tin khi ra đường</p>
+                </div>
+              </div>
+              <button onclick="startGplxSimulator()" class="bg-amber-400 hover:bg-amber-300 text-slate-950 px-3 py-1.5 rounded-lg text-xs font-bold transition-transform active:scale-95 shadow">
+                <i class="fa-solid fa-eye mr-1"></i> Xem Bằng Lái
+              </button>
+            </div>
+
+            <!-- Kết quả mô phỏng GPLX -->
+            <div id="gplx-sim-result" class="hidden mt-3 p-3.5 bg-[#fdf6e2] text-slate-900 rounded-xl border-2 border-amber-500 shadow-lg animate-in fade-in duration-300">
+              <div class="flex items-center justify-between border-b border-amber-300 pb-2 mb-2">
+                <span class="text-xs font-black text-amber-900 uppercase"><i class="fa-solid fa-shield-halved text-emerald-600 mr-1"></i> Giấy Phép Lái Xe VNeID Của Bác</span>
+                <span class="text-[10px] bg-emerald-600 text-white font-bold px-2 py-0.5 rounded">HỢP LỆ</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2 text-xs text-left mb-3">
+                <div>
+                  <span class="text-slate-500 text-[10px]">Người lái xe:</span>
+                  <div class="font-extrabold text-sm text-slate-900">VÀNG SEO PAO</div>
+                </div>
+                <div>
+                  <span class="text-slate-500 text-[10px]">Hạng bằng lái:</span>
+                  <div class="font-extrabold text-sm text-red-700">A1 (Xe Mô Tô)</div>
+                </div>
+                <div>
+                  <span class="text-slate-500 text-[10px]">Số GPLX:</span>
+                  <div class="font-mono font-bold text-slate-800">220198000123</div>
+                </div>
+                <div>
+                  <span class="text-slate-500 text-[10px]">Nơi cấp:</span>
+                  <div class="font-bold text-slate-800">Sở GTVT Tuyên Quang</div>
+                </div>
+              </div>
+
+              <div class="flex gap-2">
+                <button onclick="simulateCsgtCheck()" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 rounded-lg text-xs transition-colors shadow">
+                  <i class="fa-solid fa-qrcode mr-1"></i> Mô phỏng CSGT Quét Kiểm Tra
+                </button>
+                <button onclick="resetGplxSim()" class="px-3 bg-slate-200 hover:bg-slate-300 text-slate-800 text-xs font-semibold rounded-lg">
+                  Thu lại
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== CHUYÊN ĐỀ 2 ==================== -->
+      <section id="topic-vh-2" class="topic-card hidden bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+        <div class="p-4 sm:p-5 bg-gradient-to-r from-emerald-50 via-teal-50/50 to-white border-b border-emerald-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl shrink-0 shadow">
+              <i class="fa-solid fa-qrcode"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-emerald-700 uppercase tracking-wide">Chuyên Đề 02 · Kinh Tế Số Cơ Sở</span>
+              <h3 class="text-base sm:text-xl font-bold text-slate-900 leading-snug">
+                Quét Mã QR Thanh Toán An Toàn Tại Chợ Phiên
+              </h3>
+            </div>
+          </div>
+
+          <button onclick="speakTopic(2)" class="w-full sm:w-auto bg-emerald-700 hover:bg-emerald-800 text-white px-4 py-2 rounded-xl text-xs font-bold flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-95">
+            <i class="fa-solid fa-volume-high text-amber-300"></i>
+            <span>Nghe Toàn Bài 02</span>
+          </button>
+        </div>
+
+        <div class="p-4 sm:p-6 space-y-4">
+          <div class="bg-emerald-50 border-l-4 border-emerald-500 p-3.5 rounded-r-xl text-xs sm:text-sm text-emerald-950">
+            <div class="font-bold flex items-center gap-1.5 mb-1 text-emerald-900">
+              <i class="fa-solid fa-store text-emerald-700"></i>
+              <span>Đi chợ phiên Quản Bạ thời công nghệ số:</span>
+            </div>
+            Mua bán rau củ, nông sản, thịt lợn bản, quần áo tại chợ phiên không lo rơi rớt tiền lẻ, không sợ tiền rách. Nhưng phải <strong>nhìn đúng tên chủ tài khoản</strong> để không chuyển nhầm tiền!
+          </div>
+
+          <div class="space-y-4">
+            <!-- Bước 1 -->
+            <div class="step-item p-3.5 sm:p-4 rounded-2xl border border-slate-200 hover:border-emerald-300 bg-white hover:bg-emerald-50/10 transition-all space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 font-extrabold flex items-center justify-center shrink-0 text-sm">
+                  1
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="font-bold text-sm sm:text-base text-slate-900">Mở ứng dụng Ngân hàng hoặc Viettel Money</div>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                    Mở ứng dụng ngân hàng (Agribank, BIDV, VietinBank,...) hoặc Ví Viettel Money mà gia đình hay dùng để nhận tiền trợ cấp hoặc gửi tiền.
+                  </p>
+                </div>
+                <button onclick="speakStep('Bước 1: Mở ứng dụng ngân hàng như Agribank, BIDV hoặc ví Viettel Money trên điện thoại của gia đình.')" class="tts-step-btn w-9 h-9 rounded-lg bg-slate-100 hover:bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 transition-colors" title="Nghe đọc bước 1">
+                  <i class="fa-solid fa-volume-high text-xs"></i>
+                </button>
+              </div>
+
+              <!-- HÌNH ẢNH TRỰC QUAN BƯỚC 1: BIỂU TƯỢNG APP ĐƯỢC ĐÁNH DẤU CHỌN -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-3 sm:p-4 rounded-xl border border-slate-300 shadow-inner">
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pb-2 border-b border-slate-800">
+                  <span class="font-semibold text-emerald-400"><i class="fa-solid fa-mobile-screen mr-1"></i> Màn hình chính điện thoại</span>
+                  <span><i class="fa-solid fa-wifi mr-1"></i><i class="fa-solid fa-battery-full"></i> 09:35</span>
+                </div>
+
+                <div class="max-w-xs mx-auto py-3 px-3 bg-slate-900/90 rounded-xl border border-slate-800 mt-2">
+                  <div class="text-[10px] text-slate-400 text-center mb-2">Chạm vào ứng dụng ngân hàng gia đình thường dùng:</div>
+                  <div class="grid grid-cols-3 gap-3 text-center">
+                    <!-- APP 1: AGRIBANK (ĐÁNH DẤU CHỌN) -->
+                    <div class="p-2 rounded-xl border-2 border-red-500 bg-red-950/60 ring-4 ring-red-400/40 relative animate-pulse shadow-lg">
+                      <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[9px] font-black px-2 py-0.2 rounded-full uppercase whitespace-nowrap shadow">
+                        👉 CHẠM MỞ
+                      </div>
+                      <div class="w-10 h-10 mx-auto rounded-xl bg-red-800 border border-amber-400 flex items-center justify-center text-amber-300 text-lg shadow">
+                        <i class="fa-solid fa-building-columns"></i>
+                      </div>
+                      <div class="text-[11px] font-bold text-amber-300 mt-1">Agribank</div>
+                    </div>
+
+                    <!-- App 2: Viettel Money -->
+                    <div class="p-2 rounded-xl bg-slate-800/40 border border-slate-700/60 opacity-70">
+                      <div class="w-10 h-10 mx-auto rounded-xl bg-red-600 flex items-center justify-center text-white text-lg">
+                        <i class="fa-solid fa-wallet"></i>
+                      </div>
+                      <div class="text-[10px] text-slate-300 mt-1">Viettel Money</div>
+                    </div>
+
+                    <!-- App 3: BIDV -->
+                    <div class="p-2 rounded-xl bg-slate-800/40 border border-slate-700/60 opacity-70">
+                      <div class="w-10 h-10 mx-auto rounded-xl bg-emerald-700 flex items-center justify-center text-white text-lg">
+                        <i class="fa-solid fa-money-bill-transfer"></i>
+                      </div>
+                      <div class="text-[10px] text-slate-300 mt-1">BIDV / Khác</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="text-center mt-2">
+                  <span class="inline-block bg-emerald-400/20 text-emerald-300 text-[11px] px-2.5 py-0.5 rounded-full font-medium border border-emerald-400/30">
+                    <i class="fa-solid fa-hand-pointer mr-1"></i> Bấm mở ứng dụng ngân hàng Agribank hoặc ví Viettel Money trên máy
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bước 2 -->
+            <div class="step-item p-3.5 sm:p-4 rounded-2xl border border-slate-200 hover:border-emerald-300 bg-white hover:bg-emerald-50/10 transition-all space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 font-extrabold flex items-center justify-center shrink-0 text-sm">
+                  2
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="font-bold text-sm sm:text-base text-slate-900">Bấm biểu tượng “Quét QR”</div>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                    Bấm vào nút tròn có hình ô vuông mã QR ở chính giữa phía dưới màn hình để bật camera điện thoại lên.
+                  </p>
+                </div>
+                <button onclick="speakStep('Bước 2: Bấm vào nút tròn có hình ô vuông mã QR ở giữa màn hình để bật camera điện thoại.')" class="tts-step-btn w-9 h-9 rounded-lg bg-slate-100 hover:bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 transition-colors" title="Nghe đọc bước 2">
+                  <i class="fa-solid fa-volume-high text-xs"></i>
+                </button>
+              </div>
+
+              <!-- HÌNH ẢNH TRỰC QUAN BƯỚC 2: NÚT QUÉT QR ĐƯỢC ĐÁNH DẤU TRÊN THANH ĐIỀU HƯỚNG -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-3 sm:p-4 rounded-xl border border-slate-300 shadow-inner">
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pb-2 border-b border-slate-800">
+                  <span class="font-semibold text-emerald-400"><i class="fa-solid fa-mobile-screen mr-1"></i> Giao diện App Ngân hàng</span>
+                  <span><i class="fa-solid fa-wifi mr-1"></i><i class="fa-solid fa-battery-full"></i> 09:36</span>
+                </div>
+
+                <div class="max-w-xs mx-auto py-2 px-3 bg-slate-900/90 rounded-xl border border-slate-800 mt-2 space-y-3">
+                  <!-- Thông tin tài khoản giả lập -->
+                  <div class="p-2.5 rounded-lg bg-red-950/40 border border-red-900/60 flex items-center justify-between">
+                    <div>
+                      <div class="text-[10px] text-amber-300 font-mono">Tài khoản Agribank Quản Bạ</div>
+                      <div class="text-xs font-black text-white">Số dư: 1.520.000 đ</div>
+                    </div>
+                    <i class="fa-solid fa-eye-slash text-slate-400 text-xs"></i>
+                  </div>
+
+                  <!-- THANH ĐIỀU HƯỚNG VỚI NÚT QUÉT QR NỔI BẬT ĐƯỢC ĐÁNH DẤU -->
+                  <div>
+                    <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1 text-center">Thanh công cụ ở đáy:</div>
+                    <div class="flex items-center justify-around p-1.5 bg-black/60 rounded-xl border border-slate-700 relative">
+                      <!-- Nút Trang chủ -->
+                      <div class="text-center text-slate-400 text-[10px] opacity-60">
+                        <i class="fa-solid fa-house text-sm"></i>
+                        <div>Trang chủ</div>
+                      </div>
+
+                      <!-- NÚT TRÒN QUÉT QR LỚN Ở GIỮA ĐƯỢC ĐÁNH DẤU KHOANH ĐỎ PHÁT SÁNG -->
+                      <div class="text-center p-2 rounded-2xl border-4 border-red-500 bg-emerald-600 text-white ring-4 ring-red-400/50 shadow-2xl relative animate-pulse">
+                        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[9px] font-black px-2 py-0.2 rounded-full uppercase whitespace-nowrap shadow">
+                          👉 BẤM NÚT NÀY
+                        </div>
+                        <i class="fa-solid fa-qrcode text-xl text-amber-300"></i>
+                        <div class="text-[10px] font-black tracking-tight text-white mt-0.5">QUÉT QR</div>
+                      </div>
+
+                      <!-- Nút Lịch sử giao dịch -->
+                      <div class="text-center text-slate-400 text-[10px] opacity-60">
+                        <i class="fa-solid fa-clock-rotate-left text-sm"></i>
+                        <div>Lịch sử</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="text-center mt-2">
+                  <span class="inline-block bg-emerald-400/20 text-emerald-300 text-[11px] px-2.5 py-0.5 rounded-full font-medium border border-emerald-400/30">
+                    <i class="fa-solid fa-arrow-pointer mr-1"></i> Bấm ngay vào nút tròn lớn <strong>QUÉT QR</strong> ở chính giữa để mở máy ảnh
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bước 3 -->
+            <div class="step-item p-3.5 sm:p-4 rounded-2xl border border-slate-200 hover:border-emerald-300 bg-white hover:bg-emerald-50/10 transition-all space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 font-extrabold flex items-center justify-center shrink-0 text-sm">
+                  3
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="font-bold text-sm sm:text-base text-slate-900">Hướng camera vào bảng mã của quầy hàng</div>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                    Giơ máy cách biển mã QR khoảng 15 đến 20 cm sao cho ô vuông mã lọt vừa khung hình. Điện thoại sẽ rung nhẹ và tự động nhận diện.
+                  </p>
+                </div>
+                <button onclick="speakStep('Bước 3: Hướng camera vào bảng mã QR của quầy hàng tại chợ phiên, cách khoảng 20 xen ti mét để máy nhận diện.')" class="tts-step-btn w-9 h-9 rounded-lg bg-slate-100 hover:bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 transition-colors" title="Nghe đọc bước 3">
+                  <i class="fa-solid fa-volume-high text-xs"></i>
+                </button>
+              </div>
+
+              <!-- HÌNH ẢNH TRỰC QUAN BƯỚC 3: KHUNG NGẮM CAMERA QUÉT MÃ QR TẠI CHỢ PHIÊN -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-3 sm:p-4 rounded-xl border border-slate-300 shadow-inner">
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pb-2 border-b border-slate-800">
+                  <span class="font-semibold text-emerald-400"><i class="fa-solid fa-camera mr-1"></i> Ống kính quét mã QR</span>
+                  <span><i class="fa-solid fa-bolt mr-1"></i> Bật đèn flash</span>
+                </div>
+
+                <div class="max-w-xs mx-auto py-4 px-3 bg-black/80 rounded-xl border border-slate-800 mt-2 text-center relative">
+                  <!-- KHUNG NGẮM CAMERA 4 GÓC ĐƯỢC ĐÁNH DẤU CHUẨN XÁC -->
+                  <div class="w-44 h-44 mx-auto border-2 border-dashed border-emerald-400 rounded-2xl flex items-center justify-center relative bg-slate-900/50 p-3">
+                    <!-- 4 Góc ngắm camera -->
+                    <div class="absolute top-1 left-1 w-4 h-4 border-t-4 border-l-4 border-emerald-400"></div>
+                    <div class="absolute top-1 right-1 w-4 h-4 border-t-4 border-r-4 border-emerald-400"></div>
+                    <div class="absolute bottom-1 left-1 w-4 h-4 border-b-4 border-l-4 border-emerald-400"></div>
+                    <div class="absolute bottom-1 right-1 w-4 h-4 border-b-4 border-r-4 border-emerald-400"></div>
+
+                    <!-- Đường quét laser chuyển động -->
+                    <div class="w-full h-0.5 bg-red-500 shadow-[0_0_8px_#ef4444] animate-pulse absolute top-1/2 left-0"></div>
+
+                    <!-- Bảng mã QR bên trong khung ngắm -->
+                    <div class="p-2 bg-white rounded-lg shadow-md">
+                      <i class="fa-solid fa-qrcode text-6xl text-slate-900"></i>
+                    </div>
+
+                    <!-- Nhãn chỉ dẫn -->
+                    <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-emerald-600 text-white text-[9px] font-black px-2 py-0.5 rounded-full uppercase whitespace-nowrap shadow">
+                      👉 CĂN MÃ LỌT KHUNG NÀY
+                    </div>
+                  </div>
+
+                  <div class="text-[11px] text-emerald-300 mt-3 font-medium">
+                    Cô Vàng Thị Say
+                  </div>
+                </div>
+
+                <div class="text-center mt-2">
+                  <span class="inline-block bg-emerald-400/20 text-emerald-300 text-[11px] px-2.5 py-0.5 rounded-full font-medium border border-emerald-400/30">
+                    <i class="fa-solid fa-ruler-combined mr-1"></i> Giữ máy cách mã khoảng 20cm, điện thoại sẽ tự kêu tiếng "Bíp" khi nhận diện
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bước 4 -->
+            <div class="step-item p-3.5 sm:p-4 rounded-2xl border-2 border-emerald-400 bg-emerald-50/30 transition-all space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-extrabold flex items-center justify-center shrink-0 text-sm shadow">
+                  4
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="font-extrabold text-sm sm:text-base text-emerald-950 flex items-center gap-1.5">
+                    <span>KIỂM TRA TÊN CHỦ TÀI KHOẢN VÀ SỐ TIỀN</span>
+                    <span class="bg-red-600 text-white text-[10px] px-1.5 py-0.5 rounded uppercase">Rất quan trọng!</span>
+                  </div>
+                  <p class="text-xs sm:text-sm text-slate-700 mt-1 font-medium">
+                    Đọc to tên người nhận trên màn hình (Ví dụ: <strong>VÀNG THỊ SAY</strong>) và hỏi lại người bán: <em>"Bác có phải tên Say không ạ?"</em>. Nếu đúng tên và đúng số tiền thì mới bấm "Xác nhận chuyển tiền".
+                  </p>
+                </div>
+                <button onclick="speakStep('Bước 4, bước quan trọng nhất: Dừng lại 3 giây kiểm tra kỹ tên chủ tài khoản và số tiền trên màn hình. Đúng người bán mới bấm xác nhận!')" class="tts-step-btn w-9 h-9 rounded-lg bg-emerald-200 hover:bg-emerald-300 text-emerald-900 flex items-center justify-center shrink-0 transition-colors" title="Nghe đọc bước 4">
+                  <i class="fa-solid fa-volume-high text-xs"></i>
+                </button>
+              </div>
+
+              <!-- HÌNH ẢNH TRỰC QUAN BƯỚC 4: MÀN HÌNH XÁC NHẬN CHUYỂN TIỀN VỚI TÊN ĐƯỢC ĐÁNH DẤU ĐỐI CHIẾU -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-3 sm:p-4 rounded-xl border-2 border-red-500 shadow-xl">
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pb-2 border-b border-slate-800">
+                  <span class="font-bold text-amber-400"><i class="fa-solid fa-triangle-exclamation text-red-500 mr-1"></i> Màn hình kiểm tra trước khi chuyển</span>
+                  <span class="bg-red-600 text-white px-2 py-0.2 rounded text-[10px] font-bold">DỪNG LẠI 3 GIÂY</span>
+                </div>
+
+                <div class="max-w-xs mx-auto py-3 px-3 bg-slate-900/90 rounded-xl border border-slate-800 mt-2 space-y-2.5">
+                  <!-- KHUNG ĐÁNH DẤU TÊN VÀ SỐ TIỀN KHOANH ĐỎ RỰC RỠ -->
+                  <div class="p-3 rounded-xl border-2 border-red-500 bg-red-950/40 ring-4 ring-red-400/40 relative shadow-lg">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[9px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider whitespace-nowrap shadow flex items-center gap-1">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <span>ĐỐI CHIẾU KỸ TÊN NÀY</span>
+                    </div>
+
+                    <div class="space-y-2 pt-1 text-left">
+                      <div>
+                        <div class="text-[10px] text-slate-400 uppercase font-bold">Tên chủ tài khoản:</div>
+                        <div class="text-sm font-black text-amber-300 tracking-wide">VÀNG THỊ SAY</div>
+                        <div class="text-[10px] text-emerald-400">Ngân hàng Nông Nghiệp Agribank</div>
+                      </div>
+                      <div class="border-t border-slate-800 pt-1.5 flex justify-between items-center">
+                        <span class="text-[10px] text-slate-400 font-bold">Số tiền:</span>
+                        <span class="text-base font-black text-red-400">50.000 VNĐ</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- NÚT BẤM XÁC NHẬN ĐƯỢC CHỈ DẪN -->
+                  <div class="pt-1">
+                    <div class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-black py-2.5 rounded-xl text-xs text-center shadow-lg border border-emerald-400 flex items-center justify-center gap-1.5">
+                      <i class="fa-solid fa-circle-check text-amber-300"></i>
+                      <span>XÁC NHẬN CHUYỂN TIỀN</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="text-center mt-2">
+                  <span class="inline-block bg-red-500/20 text-red-300 text-[11px] px-2.5 py-0.5 rounded-full font-bold border border-red-400/40">
+                    <i class="fa-solid fa-hand-holding-dollar mr-1"></i> Hỏi người bán: "Có phải tên VÀNG THỊ SAY không?", đúng mới bấm nút XÁC NHẬN
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- KHU VỰC TƯƠNG TÁC THỰC HÀNH ẢO: MÁY TẬP QUÉT QR -->
+          <div class="mt-4 p-4 rounded-2xl bg-gradient-to-br from-emerald-900 to-teal-950 text-white border border-emerald-700 shadow-md">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-lg bg-emerald-500 text-slate-900 flex items-center justify-center font-bold">
+                  <i class="fa-solid fa-mobile-screen"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-emerald-200">Góc Tập Luyện: Mô Phỏng Quét QR Chợ Phiên</h4>
+                  <p class="text-[11px] text-emerald-300">Tập quét thử tại đây để bà con quen tay</p>
+                </div>
+              </div>
+              <button onclick="startQrSimulator()" class="bg-amber-400 hover:bg-amber-300 text-slate-950 px-3 py-1.5 rounded-lg text-xs font-bold transition-transform active:scale-95 shadow">
+                <i class="fa-solid fa-camera mr-1"></i> Bấm Quét Thử
+              </button>
+            </div>
+
+            <!-- Khung màn hình quét ảo -->
+            <div id="qr-sim-box" class="bg-black/40 rounded-xl p-3 border border-emerald-500/30 text-center">
+              <div class="inline-block p-2 bg-white rounded-lg shadow my-1">
+                <i class="fa-solid fa-qrcode text-5xl text-slate-900"></i>
+              </div>
+              <div class="text-xs text-emerald-200 mt-1 font-medium">Bảng QR: Cô Vàng Thị Say - Quản Bạ</div>
+              <div class="text-[11px] text-slate-300">Chủ quầy: Cô Vàng Thị Say · Mặt hàng: Mật ong bạc hà & Rau cải mèo</div>
+            </div>
+
+            <!-- Kết quả quét mô phỏng -->
+            <div id="qr-sim-result" class="hidden mt-3 p-3 bg-white text-slate-900 rounded-xl border-2 border-emerald-400">
+              <div class="flex items-center justify-between border-b pb-2 mb-2">
+                <span class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-circle-check"></i> Đã nhận diện mã QR thành công</span>
+                <span class="text-[11px] bg-slate-100 px-2 py-0.5 rounded text-slate-600">Agribank</span>
+              </div>
+              <div class="space-y-1.5 text-xs text-left">
+                <div class="flex justify-between">
+                  <span class="text-slate-500">Chủ tài khoản:</span>
+                  <strong class="text-emerald-800 font-extrabold text-sm">VÀNG THỊ SAY</strong>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-slate-500">Số tiền mua mật ong:</span>
+                  <strong class="text-red-600 font-extrabold text-sm">50.000 VNĐ</strong>
+                </div>
+              </div>
+              <div class="mt-3 flex gap-2">
+                <button onclick="confirmQrPaymentSim()" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 rounded-lg text-xs transition-colors shadow">
+                  <i class="fa-solid fa-check mr-1"></i> Đúng tên rồi! Xác nhận chuyển
+                </button>
+                <button onclick="resetQrSim()" class="px-3 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg">
+                  Làm lại
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== CHUYÊN ĐỀ 3 ==================== -->
+      <section id="topic-vh-3" class="topic-card hidden bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+        <div class="p-4 sm:p-5 bg-gradient-to-r from-red-100 via-amber-50 to-white border-b border-red-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-red-700 text-white flex items-center justify-center text-xl shrink-0 shadow">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-red-700 uppercase tracking-wide">Chuyên Đề 03 · An Toàn Không Gian Mạng</span>
+              <h3 class="text-base sm:text-xl font-bold text-slate-900 leading-snug">
+                Cảnh Báo 4 Thủ Đoạn Lừa Đảo Qua Mạng Phổ Biến
+              </h3>
+            </div>
+          </div>
+
+          <button onclick="speakTopic(3)" class="w-full sm:w-auto bg-red-700 hover:bg-red-800 text-white px-4 py-2 rounded-xl text-xs font-bold flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-95">
+            <i class="fa-solid fa-volume-high text-amber-300"></i>
+            <span>Nghe Toàn Bài 03</span>
+          </button>
+        </div>
+
+        <div class="p-4 sm:p-6 space-y-4">
+          <div class="bg-red-50 border-l-4 border-red-600 p-3.5 rounded-r-xl text-xs sm:text-sm text-red-950">
+            <div class="font-bold flex items-center gap-1.5 mb-1 text-red-900">
+              <i class="fa-solid fa-triangle-exclamation text-red-600"></i>
+              <span>Ghi nhớ 3 KHÔNG để bảo vệ mồ hôi nước mắt của cả nhà:</span>
+            </div>
+            <strong>1. KHÔNG</strong> tin cuộc gọi dọa nạt chuyển tiền · <strong>2. KHÔNG</strong> bấm vào link lạ · <strong>3. KHÔNG</strong> đọc mã OTP cho bất kỳ ai!
+          </div>
+
+          <!-- 4 Thủ đoạn lừa đảo chi tiết -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Thủ đoạn 1 -->
+            <div class="p-4 rounded-2xl border border-red-200 bg-white hover:bg-red-50/10 transition-all space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="w-8 h-8 rounded-full bg-red-600 text-white text-xs font-black flex items-center justify-center">1</span>
+                <span class="text-[11px] font-bold uppercase text-red-600 bg-red-100 px-2 py-0.5 rounded">Rất nguy hiểm</span>
+              </div>
+              <h4 class="font-bold text-sm sm:text-base text-slate-900">Mạo danh Công an, Tòa án, Cán bộ xã</h4>
+              <p class="text-xs text-slate-600">
+                Kẻ xấu gọi điện dọa: <em>"Bác dính vào đường dây buôn ma túy"</em> hoặc <em>"Căn cước bị lỗi"</em>, yêu cầu chuyển tiền vào tài khoản để điều tra.
+              </p>
+              <div class="p-2.5 bg-red-50 rounded-lg text-xs font-bold text-red-900 border border-red-200">
+                <i class="fa-solid fa-shield-cat text-red-600 mr-1"></i> Cách xử lý: Công an KHÔNG BAO GIỜ gọi điện đòi tiền! Hãy dập máy ngay.
+              </div>
+
+              <!-- HÌNH ẢNH TRỰC QUAN THỦ ĐOẠN 1: MÀN HÌNH CUỘC GỌI VỚI NÚT CÚP MÁY ĐƯỢC ĐÁNH DẤU -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-3 rounded-xl border border-slate-700 shadow-inner">
+                <div class="text-[10px] text-amber-400 font-semibold text-center mb-1">
+                  <i class="fa-solid fa-phone-slash mr-1"></i> Cuộc gọi đến từ số điện thoại lạ dọa nạt:
+                </div>
+                <div class="py-2.5 px-3 bg-slate-900/90 rounded-xl border border-slate-800 text-center space-y-2">
+                  <div class="w-9 h-9 mx-auto rounded-full bg-red-600/30 text-red-400 flex items-center justify-center text-sm">
+                    <i class="fa-solid fa-user-secret"></i>
+                  </div>
+                  <div class="text-xs font-black text-red-400">0899.776.xxx (Số lạ mạo danh)</div>
+                  <div class="text-[10px] text-slate-400">"Tự xưng Công an / Cán bộ viện kiểm sát..."</div>
+
+                  <!-- NÚT BẤM ĐƯỢC ĐÁNH DẤU: TỪ CHỐI / CÚP MÁY NGAY -->
+                  <div class="pt-2">
+                    <div class="p-2 rounded-xl border-2 border-red-500 bg-red-600/20 ring-4 ring-red-400/50 relative animate-pulse">
+                      <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[9px] font-black px-2 py-0.2 rounded-full uppercase whitespace-nowrap shadow">
+                        👉 BẤM NÚT NÀY CÚP MÁY
+                      </div>
+                      <div class="w-12 h-12 mx-auto rounded-full bg-red-600 hover:bg-red-700 text-white flex items-center justify-center text-xl shadow-lg border-2 border-white/40">
+                        <i class="fa-solid fa-phone-slash"></i>
+                      </div>
+                      <div class="text-[10px] font-black text-red-400 mt-1 uppercase">Cúp máy ngay lập tức!</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button onclick="speakStep('Thủ đoạn một: Mạo danh công an, cán bộ xã gọi điện dọa nạt bắt chuyển tiền. Cách xử lý: Công an không bao giờ làm việc qua điện thoại đòi tiền. Dập máy ngay lập tức!')" class="text-xs text-red-700 hover:text-red-900 font-bold flex items-center gap-1 pt-1">
+                <i class="fa-solid fa-volume-high"></i> Nghe lời dặn này
+              </button>
+            </div>
+
+            <!-- Thủ đoạn 2 -->
+            <div class="p-4 rounded-2xl border border-amber-200 bg-white hover:bg-amber-50/10 transition-all space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="w-8 h-8 rounded-full bg-amber-600 text-white text-xs font-black flex items-center justify-center">2</span>
+                <span class="text-[11px] font-bold uppercase text-amber-700 bg-amber-100 px-2 py-0.5 rounded">Lừa trúng thưởng</span>
+              </div>
+              <h4 class="font-bold text-sm sm:text-base text-slate-900">Tin nhắn "Trúng thưởng xe máy, tiền mặt"</h4>
+              <p class="text-xs text-slate-600">
+                Gửi tin nhắn hoặc gọi điện chúc mừng trúng xe máy Honda, trúng 100 triệu, nhưng bắt đóng trước 2 triệu đồng tiền cước vận chuyển hoặc thuế.
+              </p>
+              <div class="p-2.5 bg-amber-50 rounded-lg text-xs font-bold text-amber-950 border border-amber-200">
+                <i class="fa-solid fa-ban text-amber-600 mr-1"></i> Cách xử lý: Không tham quà từ trên trời rơi xuống. Chuyển tiền cước xong là kẻ lừa đảo sẽ chặn số!
+              </div>
+
+              <!-- HÌNH ẢNH TRỰC QUAN THỦ ĐOẠN 2: TIN NHẮN TRÚNG THƯỞNG GIẢ MẠO VỚI DẤU CẤM ĐÁNH DẤU -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-3 rounded-xl border border-slate-700 shadow-inner">
+                <div class="text-[10px] text-amber-400 font-semibold text-center mb-1">
+                  <i class="fa-solid fa-message mr-1"></i> Tin nhắn SMS mồi chài nộp tiền:
+                </div>
+                <div class="py-2.5 px-3 bg-slate-900/90 rounded-xl border border-slate-800 text-left space-y-2">
+                  <div class="flex items-center justify-between border-b border-slate-800 pb-1">
+                    <span class="text-[10px] text-slate-400 font-mono">Từ: +84918xxx888</span>
+                    <span class="bg-red-500/20 text-red-400 text-[9px] px-1.5 py-0.2 rounded font-bold">LỪA ĐẢO</span>
+                  </div>
+                  <p class="text-[11px] text-amber-200/90 italic bg-black/40 p-2 rounded-lg border border-amber-500/30">
+                    "Chuc mung quy khach trung thuong 01 xe may SH. Vui long chuyen 2.000.000d phi van chuyen ve tai khoan..."
+                  </p>
+
+                  <!-- HÀNH ĐỘNG ĐƯỢC ĐÁNH DẤU: XÓA VÀ CHẶN NGAY -->
+                  <div class="pt-1">
+                    <div class="p-2 rounded-xl border-2 border-red-500 bg-red-600/20 ring-4 ring-red-400/50 relative animate-pulse text-center">
+                      <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[9px] font-black px-2 py-0.2 rounded-full uppercase whitespace-nowrap shadow">
+                        👉 HÀNH ĐỘNG ĐÚNG
+                      </div>
+                      <div class="flex items-center justify-center gap-2 text-white font-bold text-xs py-1">
+                        <i class="fa-solid fa-trash-can text-red-400 text-base"></i>
+                        <span>XÓA TIN NHẮN & KHÔNG NỘP TIỀN</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button onclick="speakStep('Thủ đoạn hai: Tin nhắn gọi điện trúng thưởng xe máy hoặc tiền mặt bắt nộp phí. Cách xử lý: Tuyệt đối không chuyển tiền cọc hay phí vận chuyển.')" class="text-xs text-amber-800 hover:text-amber-900 font-bold flex items-center gap-1 pt-1">
+                <i class="fa-solid fa-volume-high"></i> Nghe lời dặn này
+              </button>
+            </div>
+
+            <!-- Thủ đoạn 3 -->
+            <div class="p-4 rounded-2xl border border-red-200 bg-white hover:bg-red-50/10 transition-all space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="w-8 h-8 rounded-full bg-red-600 text-white text-xs font-black flex items-center justify-center">3</span>
+                <span class="text-[11px] font-bold uppercase text-red-600 bg-red-100 px-2 py-0.5 rounded">Link độc hại</span>
+              </div>
+              <h4 class="font-bold text-sm sm:text-base text-slate-900">Bấm link lạ, bình chọn giả mạo</h4>
+              <p class="text-xs text-slate-600">
+                Gửi đường link qua Zalo, Facebook mời xem ảnh, mời bình chọn thi văn nghệ, hoặc bảo tải phần mềm dịch vụ công giả để chiếm quyền điều khiển điện thoại.
+              </p>
+              <div class="p-2.5 bg-red-50 rounded-lg text-xs font-bold text-red-900 border border-red-200">
+                <i class="fa-solid fa-circle-exclamation text-red-600 mr-1"></i> Cách xử lý: Không bấm vào link lạ. Chỉ tải app từ CH Play hoặc App Store.
+              </div>
+
+              <!-- HÌNH ẢNH TRỰC QUAN THỦ ĐOẠN 3: ĐƯỜNG LINK LẠ BỊ CẢNH BÁO CẤM CHẠM -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-3 rounded-xl border border-slate-700 shadow-inner">
+                <div class="text-[10px] text-amber-400 font-semibold text-center mb-1">
+                  <i class="fa-solid fa-link-slash mr-1"></i> Tin nhắn chứa liên kết độc hại:
+                </div>
+                <div class="py-2.5 px-3 bg-slate-900/90 rounded-xl border border-slate-800 text-left space-y-2">
+                  <div class="text-[10px] text-slate-400">Người lạ gửi qua Zalo/Facebook:</div>
+
+                  <!-- ĐƯỜNG LINK ĐƯỢC ĐÁNH DẤU BIỂN BÁO CẤM CHẠM -->
+                  <div class="p-2.5 rounded-xl border-2 border-red-500 bg-red-950/60 ring-4 ring-red-400/50 relative animate-pulse text-center">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[9px] font-black px-2 py-0.2 rounded-full uppercase whitespace-nowrap shadow flex items-center gap-1">
+                      <i class="fa-solid fa-ban"></i>
+                      <span>TUYỆT ĐỐI KHÔNG BẤM</span>
+                    </div>
+                    <div class="text-xs font-mono text-red-400 line-through">
+                      http://binhchon-hoakhoi-app.xyz
+                    </div>
+                    <div class="text-[10px] font-bold text-amber-300 mt-1">
+                      ⚠️ Bấm vào là mất quyền điều khiển điện thoại!
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button onclick="speakStep('Thủ đoạn ba: Gửi đường link lạ qua Zalo bình chọn hay tải ứng dụng giả. Cách xử lý: Tuyệt đối không bấm link lạ, không tải ứng dụng lạ.')" class="text-xs text-red-700 hover:text-red-900 font-bold flex items-center gap-1 pt-1">
+                <i class="fa-solid fa-volume-high"></i> Nghe lời dặn này
+              </button>
+            </div>
+
+            <!-- Thủ đoạn 4 -->
+            <div class="p-4 rounded-2xl border border-red-300 bg-red-50/40 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="w-8 h-8 rounded-full bg-red-700 text-white text-xs font-black flex items-center justify-center">4</span>
+                <span class="text-[11px] font-bold uppercase text-white bg-red-700 px-2 py-0.5 rounded">Khắc cốt ghi tâm</span>
+              </div>
+              <h4 class="font-bold text-sm sm:text-base text-red-950">Đòi mã OTP ngân hàng (SMS)</h4>
+              <p class="text-xs text-slate-700 font-medium">
+                Kẻ xấu giả danh nhân viên ngân hàng bảo: <em>"Bác đọc mã 6 số vừa gửi về máy để cháu hỗ trợ nhận tiền trợ cấp"</em>. Đọc xong là mất sạch tiền trong tài khoản!
+              </p>
+              <div class="p-2.5 bg-red-600 text-white rounded-lg text-xs font-extrabold shadow-sm">
+                <i class="fa-solid fa-key mr-1"></i> MÃ OTP LÀ CHÌA KHÓA TỦ VÀNG — TUYỆT ĐỐI KHÔNG ĐỌC CHO BẤT KỲ AI!
+              </div>
+
+              <!-- HÌNH ẢNH TRỰC QUAN THỦ ĐOẠN 4: TIN NHẮN MÃ OTP VỚI Ổ KHÓA BẢO MẬT ĐÁNH DẤU CẤM TIẾT LỘ -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-3 rounded-xl border-2 border-red-500 shadow-xl">
+                <div class="text-[10px] text-amber-400 font-semibold text-center mb-1">
+                  <i class="fa-solid fa-lock mr-1"></i> Tin nhắn mã OTP gửi về máy của bác:
+                </div>
+                <div class="py-2.5 px-3 bg-slate-900/90 rounded-xl border border-slate-800 text-center space-y-2">
+                  <div class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-shield-halved text-red-500 text-lg"></i>
+                    <span class="text-xs font-bold text-white">Tin nhắn từ Agribank OTP</span>
+                  </div>
+
+                  <!-- MÃ OTP ĐƯỢC ĐÁNH DẤU BẢO MẬT TUYỆT ĐỐI -->
+                  <div class="p-3 rounded-xl border-2 border-amber-400 bg-red-950/80 ring-4 ring-red-400/50 relative animate-pulse">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[9px] font-black px-2.5 py-0.5 rounded-full uppercase whitespace-nowrap shadow flex items-center gap-1">
+                      <i class="fa-solid fa-lock"></i>
+                      <span>MÃ BÍ MẬT: GIỮ KÍN!</span>
+                    </div>
+                    <div class="text-xl font-mono font-black text-amber-300 tracking-widest my-1">
+                      8 3 9 2 1 0
+                    </div>
+                    <div class="text-[10px] text-red-300 font-bold">
+                      TUYỆT ĐỐI KHÔNG ĐỌC MÃ NÀY CHO BẤT KỲ AI
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button onclick="speakStep('Thủ đoạn bốn: Hỏi mã OTP gửi về tin nhắn điện thoại. Khắc cốt ghi tâm: Mã OTP là chìa khóa tủ tiền, không đọc cho bất kỳ ai kể cả người xưng là ngân hàng!')" class="text-xs text-red-800 hover:text-red-950 font-bold flex items-center gap-1 pt-1">
+                <i class="fa-solid fa-volume-high"></i> Nghe lời dặn này
+              </button>
+            </div>
+          </div>
+
+          <!-- BỘ CÂU ĐỐ TÌNH HUỐNG TRẮC NGHIỆM VUI -->
+          <div class="mt-4 p-4 rounded-2xl bg-amber-50 border border-amber-300">
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-question text-amber-700 text-lg"></i>
+                <h4 class="font-bold text-sm sm:text-base text-amber-950">Đố Vui Tình Huống: Chiến Sĩ Nhí Thử Tài</h4>
+              </div>
+              <span id="quiz-score-badge" class="bg-amber-200 text-amber-900 text-xs font-bold px-2 py-0.5 rounded-full">Điểm: 0/3</span>
+            </div>
+
+            <!-- Khung câu đố -->
+            <div id="quiz-box" class="space-y-3 mt-3">
+              <div class="text-xs sm:text-sm font-semibold text-slate-900" id="quiz-question-text">
+                Câu 1: Có số lạ gọi điện xưng là cán bộ công an yêu cầu chuyển 15 triệu để kiểm tra tài khoản, em và gia đình cần làm gì?
+              </div>
+              <div class="grid grid-cols-1 gap-2" id="quiz-options-container">
+                <button onclick="checkQuizAnswer(0)" class="quiz-btn text-left p-2.5 rounded-xl border border-amber-200 bg-white hover:bg-amber-100 text-xs text-slate-800 font-medium transition-colors">
+                  A. Làm theo ngay vì sợ bị bắt.
+                </button>
+                <button onclick="checkQuizAnswer(1)" class="quiz-btn text-left p-2.5 rounded-xl border border-amber-200 bg-white hover:bg-amber-100 text-xs text-slate-800 font-medium transition-colors">
+                  B. Cúp máy ngay lập tức và báo công an xã hoặc thầy cô giáo.
+                </button>
+                <button onclick="checkQuizAnswer(2)" class="quiz-btn text-left p-2.5 rounded-xl border border-amber-200 bg-white hover:bg-amber-100 text-xs text-slate-800 font-medium transition-colors">
+                  C. Đọc mật khẩu tài khoản ngân hàng cho họ kiểm tra.
+                </button>
+              </div>
+              <div id="quiz-feedback" class="hidden p-2.5 rounded-xl text-xs font-bold"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== CHUYÊN ĐỀ 4: CHỨNG THỰC BẢN SAO ĐIỆN TỬ ==================== -->
+      <section id="topic-vh-4" class="topic-card hidden bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+        <div class="p-4 sm:p-5 bg-gradient-to-r from-indigo-50 via-blue-50/50 to-white border-b border-indigo-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-indigo-600 text-white flex items-center justify-center text-xl shrink-0 shadow">
+              <i class="fa-solid fa-stamp"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-indigo-700 uppercase tracking-wide">Chuyên Đề 05 · Dịch Vụ Công & Hành Chính Số</span>
+              <h3 class="text-base sm:text-xl font-bold text-slate-900 leading-snug">
+                Chứng Thực Bản Sao Điện Tử Từ Bản Chính Trên Điện Thoại
+              </h3>
+            </div>
+          </div>
+
+          <button onclick="speakTopic(4)" class="w-full sm:w-auto bg-indigo-700 hover:bg-indigo-800 text-white px-4 py-2 rounded-xl text-xs font-bold flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-95">
+            <i class="fa-solid fa-volume-high text-amber-300"></i>
+            <span>Nghe Toàn Bài Chứng Thực</span>
+          </button>
+        </div>
+
+        <div class="p-4 sm:p-6 space-y-4">
+          <!-- Hộp ghi chú ý nghĩa thiết thực -->
+          <div class="bg-indigo-50 border-l-4 border-indigo-500 p-3.5 rounded-r-xl text-xs sm:text-sm text-indigo-950">
+            <div class="font-bold flex items-center gap-1.5 mb-1 text-indigo-900">
+              <i class="fa-solid fa-circle-check text-indigo-600"></i>
+              <span>Lợi ích lớn cho người dân và học sinh vùng cao:</span>
+            </div>
+            Khi làm hồ sơ xin học bổng, xin việc làm, vay vốn hay thủ tục hành chính, bà con <strong>không cần tốn tiền photocopy nhiều bản giấy</strong> và không phải đi xa lên xã chờ đóng dấu mộc đỏ. Chỉ cần dùng điện thoại chụp ảnh giấy khai sinh, CCCD, bằng cấp... gửi qua Cổng Dịch vụ công Quốc gia (dichvucong.gov.vn) liên kết VNeID. Bản sao điện tử được cấp có <strong>chữ ký số và con dấu điện tử</strong> có giá trị pháp lý 100% như bản sao giấy và <strong>dùng lại được mãi mãi</strong>!
+          </div>
+
+          <!-- Các bước hướng dẫn (Step by step) -->
+          <div class="space-y-4">
+            <!-- Bước 1 -->
+            <div class="step-item p-3.5 sm:p-4 rounded-2xl border border-slate-200 hover:border-indigo-300 bg-white hover:bg-indigo-50/10 transition-all space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-indigo-100 text-indigo-800 font-extrabold flex items-center justify-center shrink-0 text-sm">
+                  1
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="font-bold text-sm sm:text-base text-slate-900">Vào dichvucong.gov.vn và Đăng nhập bằng VNeID</div>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                    Mở trình duyệt trên điện thoại gõ <strong>dichvucong.gov.vn</strong>. Nhấn nút <strong>“Đăng nhập”</strong> rồi chọn phương thức <strong>“Tài khoản định danh điện tử cấp bởi Bộ Công an (VNeID)”</strong>.
+                  </p>
+                </div>
+                <button onclick="speakStep('Bước 1: Mở trình duyệt trên điện thoại truy cập dichvucong.gov.vn, bấm Đăng nhập và chọn Tài khoản VNeID.')" class="tts-step-btn w-9 h-9 rounded-lg bg-slate-100 hover:bg-indigo-100 text-indigo-700 flex items-center justify-center shrink-0 transition-colors" title="Nghe đọc bước 1">
+                  <i class="fa-solid fa-volume-high text-xs"></i>
+                </button>
+              </div>
+
+              <!-- HÌNH ẢNH TRỰC QUAN BƯỚC 1: TRANG DICHVUCONG.GOV.VN VỚI NÚT ĐĂNG NHẬP VNeID ĐƯỢC ĐÁNH DẤU -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-3 sm:p-4 rounded-xl border border-slate-300 shadow-inner">
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pb-2 border-b border-slate-800">
+                  <span class="font-semibold text-indigo-400"><i class="fa-solid fa-globe mr-1"></i> Trình duyệt web di động</span>
+                  <span class="text-emerald-400 font-mono"><i class="fa-solid fa-lock mr-1"></i> https://dichvucong.gov.vn</span>
+                </div>
+
+                <div class="max-w-xs mx-auto py-3 px-3 bg-slate-900/90 rounded-xl border border-slate-800 mt-2 space-y-2.5">
+                  <!-- Thanh tiêu đề Cổng DVCQG -->
+                  <div class="p-2 bg-red-900/40 rounded-lg border border-red-800/60 flex items-center gap-2">
+                    <div class="w-7 h-7 rounded-full bg-amber-400 text-red-900 flex items-center justify-center text-xs font-black shrink-0">
+                      ★
+                    </div>
+                    <div class="text-left">
+                      <div class="text-[10px] font-black uppercase text-amber-300">CỔNG DỊCH VỤ CÔNG QUỐC GIA</div>
+                      <div class="text-[8px] text-slate-300">Hệ thống một cửa điện tử quốc gia</div>
+                    </div>
+                  </div>
+
+                  <div class="text-[10px] text-slate-300 text-center font-medium">Chọn phương thức đăng nhập:</div>
+
+                  <!-- Tùy chọn 1: Cổng DVC (Mờ) -->
+                  <div class="p-2 rounded-lg bg-slate-800/40 text-slate-400 text-xs flex items-center justify-between opacity-50 border border-slate-700">
+                    <span>Tài khoản cấp bởi Cổng DVCQG</span>
+                    <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                  </div>
+
+                  <!-- TÙY CHỌN 2: TÀI KHOẢN ĐỊNH DANH ĐIỆN TỬ VNeID (KHOANH ĐỎ NỔI BẬT) -->
+                  <div class="p-3 rounded-xl border-2 border-red-500 bg-gradient-to-r from-red-950 via-red-900 to-amber-950 text-white font-bold ring-4 ring-red-400/50 shadow-xl relative animate-pulse">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[9px] font-black px-2.5 py-0.5 rounded-full uppercase whitespace-nowrap shadow flex items-center gap-1">
+                      👉 BẤM VÀO ĐÂY
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center gap-2.5">
+                        <div class="w-8 h-8 rounded-lg bg-red-600 text-amber-300 flex items-center justify-center text-sm shadow">
+                          <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="text-left">
+                          <div class="text-xs font-black text-amber-200">Tài khoản Định danh điện tử cấp bởi Bộ Công an</div>
+                          <div class="text-[10px] text-emerald-300 font-normal">Dành cho công dân đã có VNeID Mức 2</div>
+                        </div>
+                      </div>
+                      <i class="fa-solid fa-circle-arrow-right text-amber-300 text-sm"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="text-center mt-2">
+                  <span class="inline-block bg-indigo-400/20 text-indigo-300 text-[11px] px-2.5 py-0.5 rounded-full font-medium border border-indigo-400/30">
+                    <i class="fa-solid fa-arrow-pointer mr-1"></i> Bấm chọn dòng <strong>Tài khoản Định danh điện tử cấp bởi Bộ Công an</strong> để đăng nhập nhanh bằng VNeID
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bước 2 -->
+            <div class="step-item p-3.5 sm:p-4 rounded-2xl border border-slate-200 hover:border-indigo-300 bg-white hover:bg-indigo-50/10 transition-all space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-indigo-100 text-indigo-800 font-extrabold flex items-center justify-center shrink-0 text-sm">
+                  2
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="font-bold text-sm sm:text-base text-slate-900">Tìm kiếm “Chứng thực bản sao từ bản chính” và Chọn Nộp trực tuyến</div>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                    Tại thanh tìm kiếm, gõ <strong>“Chứng thực bản sao từ bản chính”</strong>. Khi danh sách hiện ra, bấm vào thủ tục cấp Xã/Phường và nhấn nút màu cam đỏ <strong>“Nộp trực tuyến”</strong>.
+                  </p>
+                </div>
+                <button onclick="speakStep('Bước 2: Gõ từ khóa Chứng thực bản sao từ bản chính vào ô tìm kiếm, sau đó bấm nút Nộp trực tuyến màu cam.')" class="tts-step-btn w-9 h-9 rounded-lg bg-slate-100 hover:bg-indigo-100 text-indigo-700 flex items-center justify-center shrink-0 transition-colors" title="Nghe đọc bước 2">
+                  <i class="fa-solid fa-volume-high text-xs"></i>
+                </button>
+              </div>
+
+              <!-- HÌNH ẢNH TRỰC QUAN BƯỚC 2: Ô TÌM KIẾM VÀ NÚT NỘP TRỰC TUYẾN ĐƯỢC ĐÁNH DẤU -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-3 sm:p-4 rounded-xl border border-slate-300 shadow-inner">
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pb-2 border-b border-slate-800">
+                  <span class="font-semibold text-indigo-400"><i class="fa-solid fa-magnifying-glass mr-1"></i> Tra cứu Dịch vụ công trực tuyến</span>
+                  <span><i class="fa-solid fa-wifi mr-1"></i> 09:42</span>
+                </div>
+
+                <div class="max-w-xs mx-auto py-2 px-3 bg-slate-900/90 rounded-xl border border-slate-800 mt-2 space-y-3">
+                  <!-- Thanh tìm kiếm giả lập -->
+                  <div class="p-2 rounded-xl bg-slate-800/80 border border-indigo-400 flex items-center gap-2">
+                    <i class="fa-solid fa-magnifying-glass text-indigo-400 text-xs"></i>
+                    <span class="text-xs text-white font-semibold flex-1">Chứng thực bản sao từ bản chính</span>
+                    <i class="fa-solid fa-circle-xmark text-slate-500 text-xs"></i>
+                  </div>
+
+                  <!-- THẺ KẾT QUẢ THỦ TỤC VỚI NÚT NỘP TRỰC TUYẾN KHOANH ĐỎ -->
+                  <div class="p-3 rounded-xl border border-slate-700 bg-slate-800/90 space-y-2 text-left">
+                    <div class="text-[10px] text-amber-400 font-bold uppercase">Cấp thực hiện: Cấp Xã / Phường</div>
+                    <div class="text-xs font-black text-white leading-snug">
+                      Chứng thực bản sao từ bản chính giấy tờ, văn bản do cơ quan có thẩm quyền cấp
+                    </div>
+                    <div class="text-[10px] text-slate-300 flex items-center gap-3">
+                      <span><i class="fa-regular fa-clock text-amber-400 mr-1"></i> Giải quyết: Trong ngày</span>
+                      <span><i class="fa-solid fa-coins text-amber-400 mr-1"></i> Phí: 2.000 đ/trang</span>
+                    </div>
+
+                    <!-- NÚT NỘP TRỰC TUYẾN KHOANH ĐỎ PHÁT SÁNG -->
+                    <div class="pt-1">
+                      <div class="p-2 rounded-xl border-2 border-red-500 bg-gradient-to-r from-red-600 to-amber-600 text-white font-black ring-4 ring-red-400/50 relative shadow-xl text-center">
+                        <div class="absolute -top-3 right-3 bg-red-600 text-white text-[9px] font-black px-2 py-0.2 rounded-full uppercase whitespace-nowrap shadow">
+                          👉 BẤM VÀO ĐÂY
+                        </div>
+                        <i class="fa-solid fa-file-arrow-up mr-1 text-amber-200"></i>
+                        <span>NỘP TRỰC TUYẾN</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="text-center mt-2">
+                  <span class="inline-block bg-indigo-400/20 text-indigo-300 text-[11px] px-2.5 py-0.5 rounded-full font-medium border border-indigo-400/30">
+                    <i class="fa-solid fa-hand-pointer mr-1"></i> Nhấn nút màu đỏ <strong>NỘP TRỰC TUYẾN</strong> để mở biểu mẫu nộp giấy tờ
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bước 3 -->
+            <div class="step-item p-3.5 sm:p-4 rounded-2xl border border-slate-200 hover:border-indigo-300 bg-white hover:bg-indigo-50/10 transition-all space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-indigo-100 text-indigo-800 font-extrabold flex items-center justify-center shrink-0 text-sm">
+                  3
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="font-bold text-sm sm:text-base text-slate-900">Chọn UBND xã Quản Bạ & Tải ảnh chụp bản chính rõ nét</div>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                    Tại mục Cơ quan tiếp nhận: Chọn <strong>Tỉnh Tuyên Quang 👉 Huyện Quản Bạ 👉 UBND xã Quản Bạ</strong>. Tại mục Tệp tin: Bấm <strong>“Chọn tệp tin”</strong> rồi chụp ảnh giấy tờ gốc đủ 4 góc, rõ chữ, không bị lóa.
+                  </p>
+                </div>
+                <button onclick="speakStep('Bước 3: Chọn cơ quan tiếp nhận là UBND xã Quản Bạ, chụp ảnh giấy tờ gốc đủ bốn góc, rõ chữ không lóa sáng rồi bấm tải lên.')" class="tts-step-btn w-9 h-9 rounded-lg bg-slate-100 hover:bg-indigo-100 text-indigo-700 flex items-center justify-center shrink-0 transition-colors" title="Nghe đọc bước 3">
+                  <i class="fa-solid fa-volume-high text-xs"></i>
+                </button>
+              </div>
+
+              <!-- HÌNH ẢNH TRỰC QUAN BƯỚC 3: MỤC CHỌN XÃ VÀ KHUNG CHỤP ẢNH TÀI LIỆU 4 GÓC -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-3 sm:p-4 rounded-xl border border-slate-300 shadow-inner">
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pb-2 border-b border-slate-800">
+                  <span class="font-semibold text-indigo-400"><i class="fa-solid fa-file-pen mr-1"></i> Biểu mẫu nộp hồ sơ trực tuyến</span>
+                  <span><i class="fa-solid fa-building mr-1"></i> UBND Xã</span>
+                </div>
+
+                <div class="max-w-xs mx-auto py-2 px-3 bg-slate-900/90 rounded-xl border border-slate-800 mt-2 space-y-2.5 text-left">
+                  <!-- Cơ quan tiếp nhận được khoanh đỏ -->
+                  <div class="p-2 rounded-lg bg-slate-800/80 border border-slate-700 space-y-1">
+                    <div class="text-[10px] text-slate-400">Cơ quan giải quyết hồ sơ:</div>
+                    <div class="p-1.5 rounded bg-emerald-950/60 border border-emerald-500/50 text-xs font-bold text-emerald-300 flex items-center justify-between">
+                      <span>UBND xã Quản Bạ, tỉnh Tuyên Quang</span>
+                      <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                    </div>
+                  </div>
+
+                  <!-- KHUNG CHỤP ẢNH TÀI LIỆU ĐỦ 4 GÓC ĐƯỢC ĐÁNH DẤU CHUẨN XÁC -->
+                  <div class="p-2.5 rounded-xl border-2 border-red-500 bg-black/60 ring-4 ring-red-400/40 relative">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[9px] font-black px-2 py-0.2 rounded-full uppercase whitespace-nowrap shadow">
+                      👉 CHỤP ĐỦ 4 GÓC & RÕ CHỮ
+                    </div>
+
+                    <!-- Mô phỏng khung ngắm tài liệu -->
+                    <div class="w-full h-28 border-2 border-dashed border-emerald-400 rounded-lg bg-slate-800/60 flex flex-col items-center justify-center p-2 relative text-center">
+                      <!-- 4 góc ngắm -->
+                      <div class="absolute top-1 left-1 w-3 h-3 border-t-2 border-l-2 border-emerald-400"></div>
+                      <div class="absolute top-1 right-1 w-3 h-3 border-t-2 border-r-2 border-emerald-400"></div>
+                      <div class="absolute bottom-1 left-1 w-3 h-3 border-b-2 border-l-2 border-emerald-400"></div>
+                      <div class="absolute bottom-1 right-1 w-3 h-3 border-b-2 border-r-2 border-emerald-400"></div>
+
+                      <i class="fa-solid fa-file-invoice text-2xl text-amber-300 mb-1"></i>
+                      <div class="text-[10px] font-bold text-white">BẢN CHÍNH: GIẤY KHAI SINH / CCCD</div>
+                      <div class="text-[8px] text-emerald-300">✓ Đủ 4 góc · ✓ Không lóa sáng · ✓ Rõ nét</div>
+                    </div>
+
+                    <!-- Nút Tải lên tệp -->
+                    <div class="mt-2 text-center">
+                      <div class="inline-block bg-indigo-600 text-white text-[10px] font-black px-3 py-1 rounded-lg shadow">
+                        <i class="fa-solid fa-camera mr-1"></i> Bấm để Chụp / Tải lên tệp PDF
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="text-center mt-2">
+                  <span class="inline-block bg-indigo-400/20 text-indigo-300 text-[11px] px-2.5 py-0.5 rounded-full font-medium border border-indigo-400/30">
+                    <i class="fa-solid fa-camera mr-1"></i> Đặt giấy tờ thẳng trên bàn, chụp đủ 4 góc không bị che ngón tay
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bước 4 -->
+            <div class="step-item p-3.5 sm:p-4 rounded-2xl border-2 border-indigo-400 bg-indigo-50/20 transition-all space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-indigo-600 text-white font-extrabold flex items-center justify-center shrink-0 text-sm shadow">
+                  4
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="font-extrabold text-sm sm:text-base text-indigo-950 flex items-center gap-1.5">
+                    <span>NHẬN BẢN SAO ĐIỆN TỬ CÓ DẤU MỘC ĐỎ & CHỮ KÝ SỐ</span>
+                    <span class="bg-emerald-600 text-white text-[10px] px-1.5 py-0.5 rounded uppercase">Dùng Vĩnh Viễn</span>
+                  </div>
+                  <p class="text-xs sm:text-sm text-slate-700 mt-1 font-medium">
+                    UBND xã Quản Bạ sẽ ký số và trả kết quả file PDF về tài khoản Cổng DVC / VNeID của gia đình. Bản sao điện tử này có <strong>chữ ký số và con dấu đỏ</strong>, có giá trị pháp lý 100% như bản sao giấy và dùng được mãi mãi!
+                  </p>
+                </div>
+                <button onclick="speakStep('Bước 4: Kết quả được trả về kho dữ liệu điện tử. Bản sao điện tử có chữ ký số và dấu đỏ của xã, có giá trị pháp lý tương đương bản giấy và dùng được mãi mãi.')" class="tts-step-btn w-9 h-9 rounded-lg bg-indigo-200 hover:bg-indigo-300 text-indigo-900 flex items-center justify-center shrink-0 transition-colors" title="Nghe đọc bước 4">
+                  <i class="fa-solid fa-volume-high text-xs"></i>
+                </button>
+              </div>
+
+              <!-- HÌNH ẢNH TRỰC QUAN BƯỚC 4: BẢN SAO ĐIỆN TỬ CHUẨN QUỐC GIA CÓ DẤU MỘC SỐ VÀ MÃ QR -->
+              <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-3 sm:p-4 rounded-xl border border-slate-300 shadow-inner">
+                <div class="flex items-center justify-between text-[11px] text-slate-400 pb-2 border-b border-slate-800">
+                  <span class="font-bold text-amber-400"><i class="fa-solid fa-file-circle-check mr-1"></i> Kết quả Bản Sao Điện Tử</span>
+                  <span class="text-emerald-400 font-mono"><i class="fa-solid fa-check-circle mr-1"></i> Có giá trị pháp lý toàn quốc</span>
+                </div>
+
+                <!-- KHUNG MÔ PHỎNG VĂN BẢN BẢN SAO ĐIỆN TỬ CHUẨN NHÀ NƯỚC -->
+                <div class="max-w-xs mx-auto py-3 px-3 bg-white rounded-xl border-2 border-indigo-400 shadow-2xl text-slate-900 mt-2 space-y-2 relative">
+                  <!-- Tiêu đề Quốc hiệu -->
+                  <div class="text-center border-b border-slate-200 pb-1.5">
+                    <div class="text-[8px] font-black uppercase text-red-700 tracking-wider">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</div>
+                    <div class="text-[7px] font-semibold text-slate-700">Độc lập - Tự do - Hạnh phúc</div>
+                    <div class="text-xs font-black uppercase text-indigo-900 mt-1">BẢN SAO ĐIỆN TỬ TỪ BẢN CHÍNH</div>
+                    <div class="text-[9px] font-bold text-slate-700">GIẤY KHAI SINH · SỐ: 88/2026/BSĐT</div>
+                  </div>
+
+                  <!-- Thông tin công dân -->
+                  <div class="text-[10px] text-left space-y-1 py-1">
+                    <div>Họ và tên: <strong class="text-slate-900">SÙNG THỊ DÍNH</strong></div>
+                    <div>Ngày sinh: <strong>15/08/2012</strong> · Dân tộc: <strong>Mông</strong></div>
+                    <div>Quê quán: <strong>Xã Quản Bạ, tỉnh Tuyên Quang</strong></div>
+                  </div>
+
+                  <!-- DẤU ĐỎ ĐIỆN TỬ VÀ MÃ QR ĐƯỢC ĐÁNH DẤU KHOANH NỔI BẬT -->
+                  <div class="p-2 rounded-xl border-2 border-red-500 bg-red-50/60 ring-2 ring-red-400/40 flex items-center justify-between">
+                    <div class="text-left">
+                      <div class="text-[8px] font-black uppercase text-red-700">ỦY BAN NHÂN DÂN XÃ QUẢN BẠ</div>
+                      <div class="text-[7px] text-emerald-800 font-bold mt-0.5">
+                        <i class="fa-solid fa-signature"></i> ĐÃ KÝ SỐ ĐIỆN TỬ
+                      </div>
+                      <div class="text-[7px] text-slate-500 font-mono">Thời gian: 09:45:20 2026</div>
+                    </div>
+
+                    <!-- MÃ QR TRA CỨU TÍNH XÁC THỰC -->
+                    <div class="p-1 bg-white rounded border border-slate-300 text-center shrink-0">
+                      <i class="fa-solid fa-qrcode text-2xl text-slate-900"></i>
+                      <div class="text-[6px] font-mono text-slate-500">MÃ XÁC THỰC</div>
+                    </div>
+                  </div>
+
+                  <div class="text-center pt-1">
+                    <span class="inline-block bg-emerald-100 text-emerald-900 text-[9px] px-2 py-0.5 rounded-full font-extrabold border border-emerald-300">
+                      ✓ Giá trị như bản giấy · Nộp xin học, xin việc mãi mãi
+                    </span>
+                  </div>
+                </div>
+
+                <div class="text-center mt-2">
+                  <span class="inline-block bg-emerald-400/20 text-emerald-300 text-[11px] px-2.5 py-0.5 rounded-full font-bold border border-emerald-400/30">
+                    <i class="fa-solid fa-check-double mr-1"></i> Lưu file PDF này trong điện thoại, dùng nộp hồ sơ trực tuyến bất kỳ lúc nào
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- KHU VỰC TƯƠNG TÁC THỰC HÀNH ẢO: MÁY TẬP CHỨNG THỰC BẢN SAO ĐIỆN TỬ -->
+          <div class="mt-4 p-4 rounded-2xl bg-gradient-to-br from-indigo-900 to-slate-950 text-white border border-indigo-700 shadow-md">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-lg bg-indigo-500 text-white flex items-center justify-center font-bold">
+                  <i class="fa-solid fa-file-circle-check"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-indigo-200">Góc Tập Luyện: Thử Nộp Hồ Sơ Chứng Thực Ảo</h4>
+                  <p class="text-[11px] text-indigo-300">Tập thao tác gửi hồ sơ về UBND xã Quản Bạ</p>
+                </div>
+              </div>
+              <button onclick="startCertSimulator()" class="bg-amber-400 hover:bg-amber-300 text-slate-950 px-3 py-1.5 rounded-lg text-xs font-bold transition-transform active:scale-95 shadow">
+                <i class="fa-solid fa-play mr-1"></i> Thử Ngay
+              </button>
+            </div>
+
+            <!-- Kết quả mô phỏng chứng thực -->
+            <div id="cert-sim-result" class="hidden mt-3 p-3.5 bg-white text-slate-900 rounded-xl border-2 border-indigo-500 shadow-lg animate-in fade-in duration-300">
+              <div class="flex items-center justify-between border-b border-indigo-200 pb-2 mb-2">
+                <span class="text-xs font-black text-indigo-900 uppercase"><i class="fa-solid fa-stamp text-indigo-600 mr-1"></i> Kết Quả Bản Sao Điện Tử Đã Cấp</span>
+                <span class="text-[10px] bg-emerald-600 text-white font-bold px-2 py-0.5 rounded">THÀNH CÔNG</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2 text-xs text-left mb-3">
+                <div>
+                  <span class="text-slate-500 text-[10px]">Loại giấy tờ:</span>
+                  <div class="font-extrabold text-xs text-slate-900">Giấy Khai Sinh</div>
+                </div>
+                <div>
+                  <span class="text-slate-500 text-[10px]">Cơ quan chứng thực:</span>
+                  <div class="font-extrabold text-xs text-indigo-700">UBND xã Quản Bạ</div>
+                </div>
+                <div>
+                  <span class="text-slate-500 text-[10px]">Mã số hồ sơ:</span>
+                  <div class="font-mono font-bold text-slate-800">CT-QB-2026-888</div>
+                </div>
+                <div>
+                  <span class="text-slate-500 text-[10px]">Tình trạng pháp lý:</span>
+                  <div class="font-bold text-emerald-700">Đã Ký Số & Đóng Dấu Đỏ</div>
+                </div>
+              </div>
+
+              <div class="flex gap-2">
+                <button onclick="downloadCertSim()" class="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 rounded-lg text-xs transition-colors shadow">
+                  <i class="fa-solid fa-download mr-1"></i> Tải Về Máy Dùng Mãi Mãi
+                </button>
+                <button onclick="resetCertSim()" class="px-3 bg-slate-200 hover:bg-slate-300 text-slate-800 text-xs font-semibold rounded-lg">
+                  Đóng
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-indigo-50 rounded-xl p-3 flex items-start gap-2.5 text-xs text-indigo-900 border border-indigo-200">
+            <i class="fa-solid fa-lightbulb text-indigo-600 text-base mt-0.5"></i>
+            <div>
+              <strong>Mẹo nhỏ cho các em học sinh:</strong> Khi nhận được file bản sao điện tử PDF từ UBND xã, các em hãy lưu vào máy và gửi vào Zalo Cloud của gia đình. Khi làm thủ tục nhập học, xin học bổng chỉ cần gửi file này đi là hợp lệ 100%, không cần phải xin lại lần nào nữa!
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ==================== KHU VỰC 3: NHẬT KÝ CHIẾN SĨ NHÍ SỐ ==================== -->
+    <section id="nhat-ky-section" class="bg-white rounded-3xl p-5 sm:p-6 shadow-md border-2 border-amber-300 relative overflow-hidden">
+      <!-- Dải ruy băng danh hiệu góc trên -->
+      <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+        <div class="flex items-center gap-2.5">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-red-600 to-amber-500 text-white flex items-center justify-center text-lg shadow">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div>
+            <span class="text-xs font-bold text-red-700 uppercase tracking-wider">Thi Đua Học Đường 2026</span>
+            <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 leading-tight">
+              Nhật Ký Chiến Sĩ Nhí Số Bản Làng
+            </h3>
+          </div>
+        </div>
+        <span class="bg-amber-100 text-amber-900 font-extrabold text-xs px-3 py-1 rounded-full border border-amber-300">
+          Quản Bạ 2026
+        </span>
+      </div>
+
+      <!-- Form thông tin học sinh -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 my-4">
+        <div>
+          <label for="student-name" class="block text-xs font-bold text-slate-700 mb-1">
+            <i class="fa-solid fa-user-graduate text-red-600 mr-1"></i> Họ và tên em:
+          </label>
+          <input type="text" id="student-name" placeholder="Ví dụ: Sùng Thị Dính" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-300 focus:border-red-600 focus:ring-2 focus:ring-red-100 outline-none transition-all font-semibold" oninput="saveStudentInfo()" />
+        </div>
+
+        <div>
+          <label for="student-class" class="block text-xs font-bold text-slate-700 mb-1">
+            <i class="fa-solid fa-chalkboard-user text-red-600 mr-1"></i> Lớp:
+          </label>
+          <input type="text" id="student-class" placeholder="Ví dụ: 7A (hoặc 6A, 8B, 9A)" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-300 focus:border-red-600 focus:ring-2 focus:ring-red-100 outline-none transition-all font-semibold" oninput="saveStudentInfo()" />
+        </div>
+
+        <div>
+          <label for="student-village" class="block text-xs font-bold text-slate-700 mb-1">
+            <i class="fa-solid fa-house-chimney text-red-600 mr-1"></i> Thôn / Bản:
+          </label>
+          <input type="text" id="student-village" placeholder="Ví dụ: Bản Quản Bạ, Lùng Tám..." class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-300 focus:border-red-600 focus:ring-2 focus:ring-red-100 outline-none transition-all font-semibold" oninput="saveStudentInfo()" />
+        </div>
+      </div>
+
+      <!-- Thanh tiến độ hoàn thành & Danh hiệu động -->
+      <div class="bg-gradient-to-r from-red-50 via-amber-50 to-orange-50 p-4 rounded-2xl border border-amber-200 my-4 space-y-2.5">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold uppercase text-slate-600">Cấp bậc thi đua:</span>
+            <span id="rank-badge" class="bg-red-700 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-sm">
+              Tân Binh Số
+            </span>
+          </div>
+          <div class="text-xs font-extrabold text-amber-900 flex items-center gap-1">
+            <span id="progress-percent" class="text-base text-red-700">0%</span>
+            <span>(</span><span id="stars-display" class="text-amber-500 tracking-widest font-black">☆☆☆☆☆</span><span>)</span>
+          </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="w-full bg-slate-200 h-3 rounded-full overflow-hidden p-0.5 shadow-inner">
+          <div id="progress-bar-fill" class="bg-gradient-to-r from-red-600 via-amber-500 to-emerald-500 h-full rounded-full transition-all duration-500 ease-out" style="width: 0%;"></div>
+        </div>
+
+        <p id="rank-desc" class="text-xs text-slate-600 italic">
+          Hãy hoàn thành từng nhiệm vụ dưới đây khi về nhà giúp đỡ bố mẹ, ông bà nhé!
+        </p>
+      </div>
+
+      <!-- Checklist 6 Nhiệm vụ số của học sinh -->
+      <div class="space-y-2.5 my-4">
+        <div class="text-xs font-extrabold uppercase text-slate-700 flex items-center gap-1.5 mb-2">
+          <i class="fa-solid fa-list-check text-red-600"></i>
+          <span>Checklist Hành Động Chiến Sĩ Số (Chạm vào ô để đánh dấu):</span>
+        </div>
+
+        <!-- Task 1 -->
+        <label class="task-checkbox-label flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-red-300 bg-white hover:bg-red-50/20 cursor-pointer transition-all select-none">
+          <input type="checkbox" id="task-1" onchange="toggleTask(1)" class="w-5 h-5 rounded mt-0.5 text-red-600 focus:ring-red-500 border-slate-300 cursor-pointer" />
+          <div class="flex-1 text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
+            1. Em đã hướng dẫn bố/mẹ tra cứu thẻ Bảo hiểm Y tế trên điện thoại khi đi trạm y tế.
+          </div>
+        </label>
+
+        <!-- Task 2 -->
+        <label class="task-checkbox-label flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-amber-300 bg-white hover:bg-amber-50/20 cursor-pointer transition-all select-none">
+          <input type="checkbox" id="task-2" onchange="toggleTask(2)" class="w-5 h-5 rounded mt-0.5 text-amber-600 focus:ring-amber-500 border-slate-300 cursor-pointer" />
+          <div class="flex-1 text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
+            2. Em đã hướng dẫn người thân mở xuất trình Giấy phép lái xe điện tử (GPLX) trên VNeID khi đi xe máy.
+          </div>
+        </label>
+
+        <!-- Task 3 -->
+        <label class="task-checkbox-label flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-emerald-300 bg-white hover:bg-emerald-50/20 cursor-pointer transition-all select-none">
+          <input type="checkbox" id="task-3" onchange="toggleTask(3)" class="w-5 h-5 rounded mt-0.5 text-emerald-600 focus:ring-emerald-500 border-slate-300 cursor-pointer" />
+          <div class="flex-1 text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
+            3. Em đã cùng người thân thực hành quét mã QR thanh toán tại chợ phiên hoặc quán tạp hóa bản làng.
+          </div>
+        </label>
+
+        <!-- Task 4 -->
+        <label class="task-checkbox-label flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-red-300 bg-white hover:bg-red-50/20 cursor-pointer transition-all select-none">
+          <input type="checkbox" id="task-4" onchange="toggleTask(4)" class="w-5 h-5 rounded mt-0.5 text-red-600 focus:ring-red-500 border-slate-300 cursor-pointer" />
+          <div class="flex-1 text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
+            4. Em đã nhắc nhở gia đình cảnh giác với các cuộc gọi mạo danh dọa nạt và KHÔNG gửi mã OTP cho ai.
+          </div>
+        </label>
+
+        <!-- Task 5 -->
+        <label class="task-checkbox-label flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-indigo-300 bg-white hover:bg-indigo-50/20 cursor-pointer transition-all select-none">
+          <input type="checkbox" id="task-5" onchange="toggleTask(5)" class="w-5 h-5 rounded mt-0.5 text-indigo-600 focus:ring-indigo-500 border-slate-300 cursor-pointer" />
+          <div class="flex-1 text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
+            5. Em đã hướng dẫn người thân cách nộp chứng thực bản sao điện tử giấy tờ (Giấy khai sinh/CCCD) trên Dịch vụ công qua VNeID.
+          </div>
+        </label>
+
+        <!-- Task 6 -->
+        <label class="task-checkbox-label flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-red-300 bg-white hover:bg-red-50/20 cursor-pointer transition-all select-none">
+          <input type="checkbox" id="task-6" onchange="toggleTask(6)" class="w-5 h-5 rounded mt-0.5 text-red-600 focus:ring-red-500 border-slate-300 cursor-pointer" />
+          <div class="flex-1 text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
+            6. Em đã mở ứng dụng bấm nút loa đọc to rõ hướng dẫn cho ông/bà, người thân trong gia đình nghe.
+          </div>
+        </label>
+      </div>
+
+      <!-- Hàng nút hành động -->
+      <div class="mt-5 flex flex-col sm:flex-row items-center gap-3">
+        <button onclick="saveAndCheckCertificate()" class="w-full sm:flex-1 bg-gradient-to-r from-red-700 via-red-600 to-amber-600 hover:from-red-800 hover:to-amber-700 text-white font-extrabold py-3.5 px-5 rounded-2xl text-sm sm:text-base shadow-lg hover:shadow-xl transition-all transform active:scale-98 flex items-center justify-center gap-2">
+          <i class="fa-solid fa-certificate text-amber-300 text-lg"></i>
+          <span>Lưu Kết Quả & Xuất Giấy Khen Điện Tử</span>
+        </button>
+
+        <button onclick="resetChecklist()" class="w-full sm:w-auto px-4 py-3 rounded-2xl border border-slate-300 hover:bg-slate-100 text-slate-600 text-xs font-bold transition-colors flex items-center justify-center gap-1.5">
+          <i class="fa-solid fa-rotate-left"></i>
+          <span>Làm lại từ đầu</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ==================== KHU VỰC ĐƯỜNG DÂY NÓNG HỖ TRỢ ĐỊA PHƯƠNG ==================== -->
+    <section class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-slate-200">
+      <div class="flex items-center gap-2.5 mb-3">
+        <div class="w-8 h-8 rounded-lg bg-red-100 text-red-700 flex items-center justify-center font-bold text-sm">
+          <i class="fa-solid fa-phone-volume"></i>
+        </div>
+        <h3 class="text-sm sm:text-base font-bold text-slate-900">
+          Số Điện Thoại Trợ Giúp Kỹ Thuật & Khẩn Cấp Tại Địa Phương
+        </h3>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs">
+        <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+          <div class="text-slate-500 font-medium">Tổ Công Nghệ Số Cộng Đồng:</div>
+          <div class="font-bold text-slate-900 text-sm mt-0.5">Nhà Văn Hóa Thôn/Bản</div>
+          <div class="text-red-700 font-semibold mt-1">Đến trực tiếp để được chỉ tay hướng dẫn</div>
+        </div>
+
+        <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+          <div class="text-slate-500 font-medium">Trạm Y Tế Xã Quản Bạ:</div>
+          <div class="font-bold text-slate-900 text-sm mt-0.5">Khám Chữa Bệnh BHYT</div>
+          <div class="text-emerald-700 font-semibold mt-1">Hỗ trợ đối soát thẻ BHYT trên VNeID</div>
+        </div>
+
+        <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+          <div class="text-slate-500 font-medium">Tổng Đài Phản Ánh Lừa Đảo:</div>
+          <div class="font-bold text-red-700 text-base mt-0.5 flex items-center gap-1.5">
+            <i class="fa-solid fa-headset"></i> 156 (Miễn cước)
+          </div>
+          <div class="text-slate-600 mt-1">Gọi ngay khi nghi ngờ số điện thoại lừa đảo</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-slate-900 text-slate-400 text-xs py-6 border-t border-slate-800 mt-8">
+    <div class="max-w-4xl mx-auto px-4 text-center space-y-2">
+      <div class="text-amber-400 font-bold uppercase tracking-wider text-xs sm:text-sm">
+        TRƯỜNG PTDTBT TH&THCS QUẢN BẠ · TỈNH TUYÊN QUANG
+      </div>
+      <p class="text-slate-300 font-medium">
+        Sản phẩm dự thi Cuộc thi Chuyển đổi số & Phong trào “Bình dân học vụ số” năm 2026
+      </p>
+      <div class="text-slate-500 text-[11px] pt-1">
+        Ứng dụng thiết kế theo chuẩn Mobile-First thân thiện trên mọi dòng điện thoại thông minh · Tích hợp giọng nói tiếng Việt và lưu trữ ngoại tuyến
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODAL GIẤY KHEN ĐIỆN TỬ ==================== -->
+  <div id="cert-modal" class="hidden fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-2xl w-full shadow-2xl border-4 border-amber-400 overflow-hidden my-auto animate-in fade-in zoom-in duration-300">
+      
+      <!-- Nút đóng góc trên -->
+      <div class="p-3 bg-amber-500 flex justify-between items-center text-red-950 font-bold px-4">
+        <span class="text-xs uppercase tracking-wider flex items-center gap-1.5">
+          <i class="fa-solid fa-trophy"></i>
+          <span>VINH DANH CHIẾN SĨ SỐ XUẤT SẮC 2026</span>
+        </span>
+        <button onclick="closeCertModal()" class="w-7 h-7 rounded-full bg-red-800 text-white hover:bg-red-900 flex items-center justify-center text-xs">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- VÙNG NỘI DUNG GIẤY KHEN (DÙNG ĐỂ IN / CHỤP ẢNH MÀN HÌNH) -->
+      <div id="print-certificate-area" class="p-5 sm:p-8 bg-[#fffdf0] text-center relative border-8 border-double border-amber-500 m-3 sm:m-4 rounded-2xl shadow-inner">
+        <!-- Viền hoa văn góc -->
+        <div class="text-xs sm:text-sm font-bold text-red-700 uppercase tracking-widest">
+          CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+        </div>
+        <div class="text-[11px] sm:text-xs font-bold text-slate-800 italic mt-0.5">
+          Độc lập - Tự do - Hạnh phúc
+        </div>
+        <div class="w-32 h-0.5 bg-red-700 mx-auto my-1.5"></div>
+
+        <!-- Tiêu ngữ trường học -->
+        <div class="text-[10px] sm:text-xs font-extrabold text-slate-700 uppercase tracking-wider mt-3">
+          BAN CHỈ ĐẠO CHUYỂN ĐỔI SỐ — PHONG TRÀO BÌNH DÂN HỌC VỤ SỐ 2026
+        </div>
+        <div class="text-xs sm:text-sm font-extrabold text-red-800 uppercase tracking-wide">
+          TRƯỜNG PTDTBT TH&THCS QUẢN BẠ
+        </div>
+
+        <!-- Huy hiệu sao vàng trang trọng -->
+        <div class="my-3 inline-block">
+          <div class="w-14 h-14 mx-auto rounded-full bg-red-700 border-2 border-amber-400 text-amber-300 flex items-center justify-center text-2xl shadow">
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl font-black text-red-700 tracking-wide uppercase drop-shadow-sm">
+          GIẤY KHEN
+        </h2>
+        <div class="text-xs font-semibold text-slate-600 uppercase tracking-widest mt-0.5">
+          DANH HIỆU CHIẾN SĨ SỐ BẢN LÀNG
+        </div>
+
+        <!-- Lời khen tặng -->
+        <div class="my-4 space-y-1">
+          <div class="text-xs sm:text-sm text-slate-600">Khen tặng em:</div>
+          <div id="cert-student-name" class="text-xl sm:text-2xl font-black text-red-800 underline decoration-amber-400 underline-offset-4">
+            SÙNG THỊ DÍNH
+          </div>
+          <div class="text-xs sm:text-sm font-bold text-slate-700">
+            Học sinh lớp: <span id="cert-student-class" class="text-red-700">7A</span> · Thôn/Bản: <span id="cert-student-village" class="text-red-700">Quản Bạ</span>
+          </div>
+        </div>
+
+        <!-- Nội dung thành tích -->
+        <p class="text-xs sm:text-sm text-slate-800 max-w-md mx-auto leading-relaxed italic bg-amber-100/50 p-2.5 rounded-xl border border-amber-200">
+          “Đã có thành tích xuất sắc: Hoàn thành 100% nhiệm vụ kỹ năng số, tích cực hướng dẫn bố mẹ, ông bà và người thân bản làng tiếp cận các tiện ích số thiết yếu trong Phong trào Bình dân học vụ số tỉnh Tuyên Quang năm 2026.”
+        </p>
+
+        <!-- Chữ ký & Ngày tháng -->
+        <div class="mt-6 flex justify-between items-end text-left px-2 sm:px-6">
+          <div class="text-center text-[10px] sm:text-xs text-slate-600">
+            <div>Mã số chứng nhận số:</div>
+            <strong class="font-mono text-red-700" id="cert-code">QB-2026-CS88</strong>
+          </div>
+
+          <div class="text-center text-xs">
+            <div class="italic text-slate-600 text-[11px]" id="cert-date">Quản Bạ, ngày ... tháng ... năm 2026</div>
+            <div class="font-extrabold text-red-800 uppercase mt-0.5 text-[11px] sm:text-xs">TRƯỞNG BAN CHỈ ĐẠO CĐS</div>
+            <!-- Dấu đỏ số tượng trưng -->
+            <div class="mt-1 inline-block border-2 border-dashed border-red-600 rounded-full px-2 py-1 text-[9px] font-black text-red-600 uppercase tracking-tighter">
+              ★ ĐÃ KÝ ĐIỆN TỬ ★
+            </div>
+            <div class="font-bold text-slate-800 text-xs mt-1">Hiệu Trưởng Nhà Trường</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nút hành động trong modal -->
+      <div class="p-3.5 bg-slate-50 border-t border-slate-200 flex flex-wrap gap-2 justify-end no-print">
+        <button onclick="window.print()" class="bg-red-700 hover:bg-red-800 text-white font-bold px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 shadow transition-colors">
+          <i class="fa-solid fa-print"></i>
+          <span>In / Lưu PDF Giấy Khen</span>
+        </button>
+        <button onclick="copyAchievementText()" class="bg-amber-400 hover:bg-amber-500 text-red-950 font-bold px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 shadow transition-colors">
+          <i class="fa-solid fa-share-nodes"></i>
+          <span id="copy-btn-text">Sao Chép Thành Tích</span>
+        </button>
+        <button onclick="closeCertModal()" class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-semibold px-3 py-2 rounded-xl text-xs transition-colors">
+          Đóng
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CANVAS HIỆU ỨNG PHÁO HOA CONFETTI -->
+  <canvas id="confetti-canvas" class="pointer-events-none fixed inset-0 z-50 w-full h-full hidden"></canvas>
+
+  <!-- ==================== JAVASCRIPT ĐIỀU KHIỂN TOÀN BỘ WEB APP ==================== -->
+  <script>
+    /**
+     * SỔ TAY KỸ NĂNG SỐ BỎ TÚI – BÌNH DÂN HỌC VỤ SỐ QUẢN BẠ 2026
+     * Đơn vị: Trường PTDTBT TH&THCS Quản Bạ, tỉnh Tuyên Quang
+     */
+
+    // --- 1. BIẾN TOÀN CỤC & DỮ LIỆU BÀI HỌC ---
+    const topicContents = {
+      1: {
+        title: "Chuyên đề 1: Tra cứu Thẻ Bảo hiểm Y tế trên VNeID khi đi trạm y tế",
+        fullText: "Chuyên đề một: Tra cứu thẻ Bảo hiểm Y tế trên VNeID khi đi trạm y tế. Lợi ích: Bà con đi khám chữa bệnh tại Trạm y tế xã Quản Bạ không cần mang thẻ giấy, không sợ rơi mất hay ướt thẻ khi trời mưa. Các bước thực hiện: Bước 1: Mở ứng dụng VNeID và đăng nhập bằng mật khẩu hoặc vân tay. Bước 2: Chọn mục Ví giấy tờ ở hàng dưới cùng màn hình. Bước 3: Nhấn vào Thẻ bảo hiểm y tế và nhập mật khẩu bảo vệ. Bước 4: Đưa mã QR trên màn hình cho bác sĩ hoặc cán bộ y tế quét thông tin. Mẹo nhỏ: Khi ở nhà có mạng Wifi khỏe, hãy chụp ảnh màn hình thẻ BHYT lưu vào máy để khi đến trạm y tế mất mạng vẫn dùng được."
+      },
+      gplx: {
+        title: "Chuyên đề: Xuất trình Giấy Phép Lái Xe điện tử trên VNeID",
+        fullText: "Chuyên đề: Xuất trình Giấy Phép Lái Xe điện tử trên VNeID cho Cảnh sát Giao thông. Quy định mới năm 2026: Khi điều khiển xe máy đi lại hoặc đi chợ phiên, bà con không bắt buộc phải mang bằng lái xe giấy nếu đã tích hợp trên VNeID. Bốn bước thực hiện: Bước 1: Mở VNeID, đăng nhập và bấm vào mục Ví giấy tờ ở dưới cùng màn hình. Bước 2: Chạm vào dòng Giấy phép lái xe có biểu tượng chiếc xe máy. Bước 3: Nhập mã số passcode bảo mật 6 số hoặc chạm vân tay. Bước 4: Màn hình hiện thẻ Giấy phép lái xe điện tử hạng A1 và mã QR. Đưa màn hình cho Cảnh sát giao thông quét kiểm tra là hoàn toàn hợp pháp và hợp lệ."
+      },
+      2: {
+        title: "Chuyên đề 2: Quét mã QR thanh toán an toàn tại chợ phiên",
+        fullText: "Chuyên đề hai: Quét mã QR thanh toán an toàn tại chợ phiên. Khi đi chợ phiên Quản Bạ, thanh toán qua mã QR giúp bà con không sợ rơi tiền lẻ. Bốn bước thực hiện: Bước 1: Mở ứng dụng ngân hàng Agribank, BIDV hoặc ví Viettel Money. Bước 2: Bấm biểu tượng Quét mã QR ở giữa màn hình. Bước 3: Hướng camera vào bảng mã của người bán hàng ở khoảng cách 20 xen ti mét. Bước 4, quan trọng nhất: Dừng lại 3 giây kiểm tra kỹ tên chủ tài khoản và số tiền trước khi bấm xác nhận chuyển. Hỏi lại người bán xem có đúng tên đó không, đúng mới bấm chuyển."
+      },
+      3: {
+        title: "Chuyên đề 3: Cảnh báo 4 thủ đoạn lừa đảo qua mạng phổ biến",
+        fullText: "Chuyên đề ba: Cảnh báo bốn thủ đoạn lừa đảo qua mạng. Hãy nhớ ba không để bảo vệ tiền của gia đình. Thủ đoạn 1: Mạo danh công an, cán bộ xã gọi điện dọa nạt bắt chuyển tiền. Nhớ rằng: Công an không bao giờ đòi tiền qua điện thoại! Cúp máy ngay. Thủ đoạn 2: Tin nhắn báo trúng thưởng xe máy hoặc tiền mặt bắt nộp phí vận chuyển. Tuyệt đối không nộp tiền. Thủ đoạn 3: Bấm link lạ qua Zalo bình chọn hoa khôi hoặc tải phần mềm giả. Không bấm link lạ. Thủ đoạn 4: Hỏi mã OTP ngân hàng gửi về tin nhắn. Khắc cốt ghi tâm: Mã OTP là chìa khóa tủ tiền, tuyệt đối không đọc cho bất kỳ ai!"
+      },
+      4: {
+        title: "Chuyên đề 5: Chứng thực bản sao điện tử từ bản chính trên điện thoại (dichvucong.gov.vn)",
+        fullText: "Chuyên đề năm: Hướng dẫn chứng thực bản sao điện tử từ bản chính trên điện thoại qua Cổng Dịch vụ công Quốc gia và VNeID. Lợi ích lớn: Bà con vùng cao khi làm thủ tục xin việc, xin học không cần đi photocopy tốn tiền và không phải chờ đợi đóng dấu giấy. Chỉ cần dùng điện thoại chụp ảnh bản chính giấy khai sinh, căn cước công dân hoặc bằng cấp gửi trực tuyến. Bốn bước thực hiện: Bước 1: Mở trình duyệt vào trang web dichvucong.gov.vn và chọn đăng nhập bằng tài khoản VNeID. Bước 2: Tìm kiếm thủ tục Chứng thực bản sao từ bản chính và bấm Nộp trực tuyến. Bước 3: Chọn cơ quan tiếp nhận là Ủy ban nhân dân xã Quản Bạ, chụp ảnh giấy tờ rõ nét đủ bốn góc và tải lên. Bước 4: Nhận bản sao điện tử có chữ ký số và con dấu đỏ trong kho dữ liệu. Bản sao điện tử này có giá trị pháp lý tương đương bản giấy và được dùng lại nhiều lần mãi mãi."
+      }
+    };
+
+    // --- 2. QUẢN LÝ TEXT-TO-SPEECH (GIỌNG NÓI TIẾNG VIỆT) ---
+    let synth = window.speechSynthesis;
+    let currentUtterance = null;
+    let vietnameseVoice = null;
+
+    function initVoices() {
+      if (!('speechSynthesis' in window)) return;
+      const voices = synth.getVoices();
+      // Ưu tiên tìm giọng tiếng Việt
+      vietnameseVoice = voices.find(v => v.lang.includes('vi-VN') || v.lang.startsWith('vi') || v.name.toLowerCase().includes('vietnam')) || null;
+    }
+
+    if ('speechSynthesis' in window) {
+      speechSynthesis.onvoiceschanged = initVoices;
+      initVoices();
+    }
+
+    function speakText(text, label = "") {
+      if (!('speechSynthesis' in window)) {
+        alert("Trình duyệt này chưa hỗ trợ đọc giọng nói. Hãy dùng Google Chrome hoặc Safari trên điện thoại nhé!");
+        return;
+      }
+
+      // Dừng âm thanh đang phát trước đó
+      stopAllSpeech();
+
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'vi-VN';
+      utterance.rate = 0.9; // Tốc độ vừa phải theo yêu cầu đề bài
+      utterance.pitch = 1.0;
+
+      if (vietnameseVoice) {
+        utterance.voice = vietnameseVoice;
+      }
+
+      utterance.onstart = () => {
+        showAudioPill(label || text.substring(0, 45) + "...");
+      };
+
+      utterance.onend = () => {
+        hideAudioPill();
+      };
+
+      utterance.onerror = () => {
+        hideAudioPill();
+      };
+
+      currentUtterance = utterance;
+      synth.speak(utterance);
+    }
+
+    function speakStep(text) {
+      speakText(text, "Đang đọc bước hướng dẫn...");
+    }
+
+    function speakTopic(topicId) {
+      const topic = topicContents[topicId];
+      if (topic) {
+        speakText(topic.fullText, topic.title);
+      }
+    }
+
+    function stopAllSpeech() {
+      if ('speechSynthesis' in window && synth.speaking) {
+        synth.cancel();
+      }
+      hideAudioPill();
+    }
+
+    function showAudioPill(label) {
+      const pill = document.getElementById('audio-live-pill');
+      const textLabel = document.getElementById('audio-current-label');
+      const stopBtn = document.getElementById('tts-stop-all-btn');
+      if (pill) pill.classList.remove('hidden');
+      if (pill) pill.classList.add('flex');
+      if (textLabel) textLabel.textContent = label;
+      if (stopBtn) stopBtn.classList.remove('hidden');
+    }
+
+    function hideAudioPill() {
+      const pill = document.getElementById('audio-live-pill');
+      const stopBtn = document.getElementById('tts-stop-all-btn');
+      if (pill) {
+        pill.classList.remove('flex');
+        pill.classList.add('hidden');
+      }
+      if (stopBtn) stopBtn.classList.add('hidden');
+    }
+
+    // --- 3. ĐIỀU HƯỚNG CHUYÊN ĐỀ (TABS) ---
+    function switchTopic(topicKey) {
+      const cards = document.querySelectorAll('.topic-card');
+      cards.forEach(card => card.classList.add('hidden'));
+
+      const activeCard = document.getElementById(`topic-${topicKey}`);
+      if (activeCard) {
+        activeCard.classList.remove('hidden');
+      }
+
+      // Cập nhật kiểu dáng nút tab
+      const navBtns = document.querySelectorAll('.topic-nav-btn');
+      navBtns.forEach(btn => {
+        btn.classList.remove('border-red-300', 'bg-red-50', 'text-red-900', 'ring-2', 'ring-red-300');
+        btn.classList.add('border-slate-200', 'bg-white', 'text-slate-800');
+      });
+
+      const currentBtn = document.getElementById(`nav-btn-${topicKey}`);
+      if (currentBtn) {
+        currentBtn.classList.remove('border-slate-200', 'bg-white', 'text-slate-800');
+        currentBtn.classList.add('border-red-300', 'bg-red-50', 'text-red-900', 'ring-2', 'ring-red-300');
+      }
+
+      // Cuộn êm đến nội dung
+      if (activeCard) {
+        activeCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+
+    // --- 4. CHẾ ĐỘ CHỮ TO CHO NGƯỜI CAO TUỔI ---
+    function toggleLargeFont() {
+      document.body.classList.toggle('large-text-mode');
+      const isLarge = document.body.classList.contains('large-text-mode');
+      const btnText = document.getElementById('font-btn-text');
+      if (btnText) {
+        btnText.textContent = isLarge ? "Chữ Vừa" : "Chữ To";
+      }
+      localStorage.setItem('qb_large_font', isLarge ? 'true' : 'false');
+    }
+
+    // --- 5. MÔ PHỎNG QUÉT MÃ QR ẢO (QR SIMULATOR) ---
+    function startQrSimulator() {
+      const simBox = document.getElementById('qr-sim-box');
+      const simResult = document.getElementById('qr-sim-result');
+      if (simBox) simBox.classList.add('animate-pulse');
+
+      playBeepSound();
+
+      setTimeout(() => {
+        if (simBox) simBox.classList.remove('animate-pulse');
+        if (simResult) simResult.classList.remove('hidden');
+        speakText("Đã quét mã QR thành công. Kiểm tra đúng tên chủ tài khoản là VÀNG THỊ SAY và số tiền 50.000 đồng.");
+      }, 700);
+    }
+
+    function confirmQrPaymentSim() {
+      playSuccessChime();
+      alert("🎉 Chúc mừng bác và em! Đã chuyển đúng 50.000đ cho chị VÀNG THỊ SAY. Mua nông sản thành công, an toàn tuyệt đối!");
+      resetQrSim();
+    }
+
+    function resetQrSim() {
+      const simResult = document.getElementById('qr-sim-result');
+      if (simResult) simResult.classList.add('hidden');
+    }
+
+    // --- 5B. MÔ PHỎNG XUẤT TRÌNH GIẤY PHÉP LÁI XE VNeID (GPLX SIMULATOR) ---
+    function startGplxSimulator() {
+      const res = document.getElementById('gplx-sim-result');
+      if (res) {
+        res.classList.remove('hidden');
+        res.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+      playBeepSound();
+      speakText("Đã mở Giấy phép lái xe điện tử của bác Vàng Seo Páo. Hạng A1 xe mô tô, số 220198000123. Bác hãy đưa màn hình cho Cảnh sát Giao thông kiểm tra.");
+    }
+
+    function simulateCsgtCheck() {
+      playSuccessChime();
+      alert("👮 Cán bộ CSGT: 'Kiểm tra thành công trên hệ thống dữ liệu Cục Cảnh sát Giao thông! Bằng lái xe điện tử của bác hợp lệ 100%, không có vi phạm. Chúc bác lái xe an toàn trên các cung đường bản làng Quản Bạ!'");
+      speakText("Cán bộ Cảnh sát giao thông đã quét mã kiểm tra thành công. Bằng lái xe điện tử hợp lệ 100%. Chúc bác lái xe an toàn!");
+    }
+
+    function resetGplxSim() {
+      const res = document.getElementById('gplx-sim-result');
+      if (res) res.classList.add('hidden');
+    }
+
+    // --- 5C. MÔ PHỎNG NỘP CHỨNG THỰC BẢN SAO ĐIỆN TỬ DVC (CERT SIMULATOR) ---
+    function startCertSimulator() {
+      const res = document.getElementById('cert-sim-result');
+      if (res) {
+        res.classList.remove('hidden');
+        res.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+      playBeepSound();
+      speakText("Hồ sơ đã được gửi trực tuyến thành công về Ủy ban nhân dân xã Quản Bạ. Cán bộ tư pháp đã duyệt và cấp Bản sao điện tử có chữ ký số và dấu đỏ hợp pháp 100%.");
+    }
+
+    function downloadCertSim() {
+      playSuccessChime();
+      alert("📄 Đã lưu Bản sao điện tử có dấu mộc số đỏ vào điện thoại thành công! Bản sao này có giá trị pháp lý tương đương bản giấy và được dùng lại nhiều lần mãi mãi.");
+      speakText("Đã tải bản sao điện tử về điện thoại thành công. Bác và em hãy lưu trong máy để dùng nộp hồ sơ xin việc, xin học mãi mãi nhé!");
+    }
+
+    function resetCertSim() {
+      const res = document.getElementById('cert-sim-result');
+      if (res) res.classList.add('hidden');
+    }
+
+    // --- 6. BỘ CÂU ĐỐ TÌNH HUỐNG LỪA ĐẢO (QUIZ) ---
+    const quizQuestions = [
+      {
+        q: "Câu 1: Có số lạ gọi điện xưng là cán bộ công an yêu cầu chuyển 15 triệu để kiểm tra tài khoản, em và gia đình cần làm gì?",
+        options: [
+          "A. Làm theo ngay vì sợ bị bắt.",
+          "B. Cúp máy ngay lập tức và báo công an xã hoặc thầy cô giáo.",
+          "C. Đọc mật khẩu tài khoản ngân hàng cho họ kiểm tra."
+        ],
+        correct: 1,
+        explain: "Chính xác! Công an nhân dân không bao giờ làm việc qua điện thoại đòi chuyển tiền!"
+      },
+      {
+        q: "Câu 2: Khi quét mã QR chuyển tiền ở chợ phiên, việc quan trọng nhất trước khi bấm gửi là gì?",
+        options: [
+          "A. Bấm gửi thật nhanh để kịp đi mua đồ khác.",
+          "B. Dừng lại nhìn kỹ tên chủ tài khoản và hỏi lại người bán đúng tên chưa.",
+          "C. Đưa điện thoại cho người lạ bất kỳ nhờ bấm hộ."
+        ],
+        correct: 1,
+        explain: "Chính xác! Phải kiểm tra đúng tên người nhận để không bị chuyển nhầm tiền cho người khác."
+      },
+      {
+        q: "Câu 3: Ai là người em và người thân được phép đọc mã OTP bí mật gửi về tin nhắn SMS?",
+        options: [
+          "A. Nhân viên tự xưng là ngân hàng gọi điện đến.",
+          "B. Người gửi link trúng thưởng xe máy.",
+          "C. Tuyệt đối không đọc cho bất kỳ ai, mã OTP như chìa khóa tủ vàng!"
+        ],
+        correct: 2,
+        explain: "Chính xác! Mã OTP là chìa khóa tủ tiền, tuyệt đối không cung cấp cho bất kỳ ai!"
+      }
+    ];
+
+    let currentQuizIndex = 0;
+    let quizScore = 0;
+
+    function renderQuiz() {
+      const question = quizQuestions[currentQuizIndex];
+      const qText = document.getElementById('quiz-question-text');
+      const optContainer = document.getElementById('quiz-options-container');
+      const fb = document.getElementById('quiz-feedback');
+
+      if (fb) fb.classList.add('hidden');
+      if (qText) qText.textContent = question.q;
+
+      if (optContainer) {
+        optContainer.innerHTML = '';
+        question.options.forEach((opt, idx) => {
+          const btn = document.createElement('button');
+          btn.className = 'quiz-btn text-left p-2.5 rounded-xl border border-amber-200 bg-white hover:bg-amber-100 text-xs text-slate-800 font-medium transition-colors';
+          btn.textContent = opt;
+          btn.onclick = () => checkQuizAnswer(idx);
+          optContainer.appendChild(btn);
+        });
+      }
+    }
+
+    function checkQuizAnswer(chosenIdx) {
+      const question = quizQuestions[currentQuizIndex];
+      const fb = document.getElementById('quiz-feedback');
+      const badge = document.getElementById('quiz-score-badge');
+
+      if (!fb) return;
+      fb.classList.remove('hidden');
+
+      if (chosenIdx === question.correct) {
+        playBeepSound();
+        quizScore++;
+        fb.className = 'p-2.5 rounded-xl text-xs font-bold bg-emerald-100 text-emerald-900 border border-emerald-300';
+        fb.innerHTML = `✅ ${question.explain}`;
+        if (badge) badge.textContent = `Điểm: ${quizScore}/3`;
+
+        setTimeout(() => {
+          if (currentQuizIndex < quizQuestions.length - 1) {
+            currentQuizIndex++;
+            renderQuiz();
+          } else {
+            fb.innerHTML = `🏆 Xuất sắc! Em đã trả lời đúng hết các câu đố nhận diện lừa đảo! Điểm số: ${quizScore}/3.`;
+          }
+        }, 1800);
+      } else {
+        fb.className = 'p-2.5 rounded-xl text-xs font-bold bg-red-100 text-red-900 border border-red-300';
+        fb.innerHTML = `❌ Chưa đúng rồi! Hãy đọc kỹ bài học số 3 và chọn lại nhé.`;
+      }
+    }
+
+    // --- 7. QUẢN LÝ NHẬT KÝ CHIẾN SĨ NHÍ SỐ & LOCALSTORAGE ---
+    const TOTAL_TASKS = 6;
+
+    function saveStudentInfo() {
+      const name = document.getElementById('student-name')?.value || '';
+      const sClass = document.getElementById('student-class')?.value || '';
+      const village = document.getElementById('student-village')?.value || '';
+
+      const studentData = { name, sClass, village };
+      localStorage.setItem('qb_student_info', JSON.stringify(studentData));
+    }
+
+    function loadStudentInfo() {
+      try {
+        const saved = localStorage.getItem('qb_student_info');
+        if (saved) {
+          const data = JSON.parse(saved);
+          if (document.getElementById('student-name')) document.getElementById('student-name').value = data.name || '';
+          if (document.getElementById('student-class')) document.getElementById('student-class').value = data.sClass || '';
+          if (document.getElementById('student-village')) document.getElementById('student-village').value = data.village || '';
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    }
+
+    function toggleTask(taskId) {
+      saveTasksState();
+      updateProgress();
+    }
+
+    function saveTasksState() {
+      const state = {};
+      for (let i = 1; i <= TOTAL_TASKS; i++) {
+        const checkbox = document.getElementById(`task-${i}`);
+        state[`task_${i}`] = checkbox ? checkbox.checked : false;
+      }
+      localStorage.setItem('qb_tasks_state', JSON.stringify(state));
+    }
+
+    function loadTasksState() {
+      try {
+        const saved = localStorage.getItem('qb_tasks_state');
+        if (saved) {
+          const state = JSON.parse(saved);
+          for (let i = 1; i <= TOTAL_TASKS; i++) {
+            const checkbox = document.getElementById(`task-${i}`);
+            if (checkbox && state[`task_${i}`] !== undefined) {
+              checkbox.checked = state[`task_${i}`];
+            }
+          }
+        }
+      } catch (e) {
+        console.error(e);
+      }
+      updateProgress();
+    }
+
+    function updateProgress() {
+      let completedCount = 0;
+      for (let i = 1; i <= TOTAL_TASKS; i++) {
+        const checkbox = document.getElementById(`task-${i}`);
+        if (checkbox && checkbox.checked) {
+          completedCount++;
+        }
+      }
+
+      const percent = Math.round((completedCount / TOTAL_TASKS) * 100);
+      const bar = document.getElementById('progress-bar-fill');
+      const percentLabel = document.getElementById('progress-percent');
+      const starsDisplay = document.getElementById('stars-display');
+      const rankBadge = document.getElementById('rank-badge');
+      const rankDesc = document.getElementById('rank-desc');
+      const quickStar = document.getElementById('quick-star-count');
+
+      if (bar) bar.style.width = `${percent}%`;
+      if (percentLabel) percentLabel.textContent = `${percent}%`;
+      if (quickStar) quickStar.textContent = `${completedCount}/6`;
+
+      // Cập nhật số sao (★ / ☆)
+      let starStr = "";
+      for (let s = 1; s <= TOTAL_TASKS; s++) {
+        starStr += s <= completedCount ? "★" : "☆";
+      }
+      if (starsDisplay) starsDisplay.textContent = starStr;
+
+      // Danh hiệu động theo cấp bậc
+      if (rankBadge && rankDesc) {
+        if (completedCount === 0) {
+          rankBadge.textContent = "Tân Binh Số";
+          rankBadge.className = "bg-slate-700 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-sm";
+          rankDesc.textContent = "Em hãy bắt đầu hành trình hỗ trợ người thân để tích lũy sao nhé!";
+        } else if (completedCount <= 2) {
+          rankBadge.textContent = "Chiến Sĩ Số Tập Sự";
+          rankBadge.className = "bg-amber-600 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-sm";
+          rankDesc.textContent = "Rất tốt! Em đang chăm chỉ hướng dẫn gia đình các kỹ năng thiết thực.";
+        } else if (completedCount <= 4) {
+          rankBadge.textContent = "Chiến Sĩ Số Siêng Năng";
+          rankBadge.className = "bg-blue-700 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-sm";
+          rankDesc.textContent = "Tuyệt vời! Em là cầu nối số tin cậy của gia đình và bà con bản làng.";
+        } else if (completedCount === 5) {
+          rankBadge.textContent = "Chiến Sĩ Số Tiên Phong";
+          rankBadge.className = "bg-indigo-700 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-sm";
+          rankDesc.textContent = "Chỉ còn 1 nhiệm vụ nữa thôi là em sẽ đạt danh hiệu cao nhất!";
+        } else {
+          rankBadge.textContent = "Chiến Sĩ Số Bản Làng Xuất Sắc";
+          rankBadge.className = "bg-gradient-to-r from-red-700 to-amber-600 text-white text-xs font-black px-3 py-1 rounded-full shadow-md animate-bounce";
+          rankDesc.textContent = "🎉 Xuất sắc! Em đã hoàn thành 100% nhiệm vụ và xứng đáng nhận Giấy Khen Điện Tử!";
+        }
+      }
+    }
+
+    function resetChecklist() {
+      if (confirm("Em có muốn làm lại nhật ký thi đua từ đầu không?")) {
+        for (let i = 1; i <= TOTAL_TASKS; i++) {
+          const checkbox = document.getElementById(`task-${i}`);
+          if (checkbox) checkbox.checked = false;
+        }
+        saveTasksState();
+        updateProgress();
+      }
+    }
+
+    // --- 8. XUẤT GIẤY KHEN ĐIỆN TỬ & CONFETTI PHÁO HOA ---
+    function saveAndCheckCertificate() {
+      saveStudentInfo();
+      const studentName = document.getElementById('student-name')?.value.trim();
+      const studentClass = document.getElementById('student-class')?.value.trim();
+      const studentVillage = document.getElementById('student-village')?.value.trim();
+
+      if (!studentName) {
+        alert("Em hãy nhập Họ và tên của mình vào ô phía trên nhé!");
+        document.getElementById('student-name')?.focus();
+        return;
+      }
+
+      let completedCount = 0;
+      for (let i = 1; i <= TOTAL_TASKS; i++) {
+        if (document.getElementById(`task-${i}`)?.checked) completedCount++;
+      }
+
+      if (completedCount < TOTAL_TASKS) {
+        const remaining = TOTAL_TASKS - completedCount;
+        alert(`Em đã hoàn thành ${completedCount}/6 nhiệm vụ. Còn ${remaining} nhiệm vụ nữa để đạt 100% và nhận Giấy Khen Xuất Sắc nhé!`);
+        return;
+      }
+
+      // Đạt 100% -> Kích hoạt Giấy Khen và Pháo Hoa
+      showCertificateModal(studentName, studentClass, studentVillage);
+    }
+
+    function showCertificateModal(name, sClass, village) {
+      document.getElementById('cert-student-name').textContent = name.toUpperCase();
+      document.getElementById('cert-student-class').textContent = sClass || "Trường PTDTBT";
+      document.getElementById('cert-student-village').textContent = village || "Quản Bạ";
+
+      // Tạo ngày và mã chứng nhận ngẫu nhiên nhưng ổn định
+      const today = new Date();
+      const dateStr = `Quản Bạ, ngày ${today.getDate()} tháng ${today.getMonth() + 1} năm 2026`;
+      document.getElementById('cert-date').textContent = dateStr;
+
+      const randomCode = Math.floor(1000 + Math.random() * 9000);
+      document.getElementById('cert-code').textContent = `QB-2026-CS${randomCode}`;
+
+      const modal = document.getElementById('cert-modal');
+      modal.classList.remove('hidden');
+
+      // Phát hiệu ứng ăn mừng
+      playSuccessChime();
+      startConfetti();
+      speakText(`Chúc mừng em ${name}! Em đã hoàn thành xuất sắc các nhiệm vụ và được trao tặng Giấy khen Chiến sĩ số bản làng năm 2026!`);
+    }
+
+    function closeCertModal() {
+      document.getElementById('cert-modal').classList.add('hidden');
+      stopConfetti();
+    }
+
+    function copyAchievementText() {
+      const name = document.getElementById('student-name')?.value || 'Chiến sĩ số';
+      const text = `🎖️ Em ${name} (Trường PTDTBT TH&THCS Quản Bạ, Tuyên Quang) đã hoàn thành 100% nhiệm vụ kỹ năng số, đạt danh hiệu CHIẾN SĨ SỐ BẢN LÀNG XUẤT SẮC NĂM 2026 trong Phong trào Bình dân học vụ số!`;
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = document.getElementById('copy-btn-text');
+        if (btn) btn.textContent = "Đã sao chép!";
+        setTimeout(() => {
+          if (btn) btn.textContent = "Sao Chép Thành Tích";
+        }, 2000);
+      }).catch(() => {
+        alert("Đã sao chép thành tích!");
+      });
+    }
+
+    // --- 9. WEB AUDIO API ÂM THANH CHÚC MỪNG TỰ SINH ---
+    let audioCtx = null;
+
+    function getAudioContext() {
+      if (!audioCtx) {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        if (AudioContext) audioCtx = new AudioContext();
+      }
+      return audioCtx;
+    }
+
+    function playBeepSound() {
+      try {
+        const ctx = getAudioContext();
+        if (!ctx) return;
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.frequency.setValueAtTime(587.33, ctx.currentTime); // D5
+        gain.gain.setValueAtTime(0.1, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.15);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.15);
+      } catch (e) {
+        console.error(e);
+      }
+    }
+
+    function playSuccessChime() {
+      try {
+        const ctx = getAudioContext();
+        if (!ctx) return;
+        const notes = [523.25, 659.25, 783.99, 1046.50]; // C5, E5, G5, C6
+        notes.forEach((freq, idx) => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(freq, ctx.currentTime + idx * 0.12);
+          gain.gain.setValueAtTime(0.15, ctx.currentTime + idx * 0.12);
+          gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + idx * 0.12 + 0.5);
+          osc.start(ctx.currentTime + idx * 0.12);
+          osc.stop(ctx.currentTime + idx * 0.12 + 0.5);
+        });
+      } catch (e) {
+        console.error(e);
+      }
+    }
+
+    // --- 10. CANVAS CONFETTI ENGINE NHẸ NHÀNG, KHÔNG PHỤ THUỘC NGOẠI VI ---
+    let confettiAnimationId = null;
+    let particles = [];
+
+    function startConfetti() {
+      const canvas = document.getElementById('confetti-canvas');
+      if (!canvas) return;
+      canvas.classList.remove('hidden');
+      const ctx = canvas.getContext('2d');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const colors = ['#dc2626', '#f59e0b', '#fbbf24', '#10b981', '#3b82f6', '#ec4899'];
+      particles = [];
+      for (let i = 0; i < 120; i++) {
+        particles.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height - canvas.height,
+          size: Math.random() * 8 + 4,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          vx: Math.random() * 4 - 2,
+          vy: Math.random() * 4 + 3,
+          rot: Math.random() * 360,
+          vrot: Math.random() * 8 - 4
+        });
+      }
+
+      function updateConfetti() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.rot += p.vrot;
+
+          if (p.y > canvas.height) {
+            p.y = -20;
+            p.x = Math.random() * canvas.width;
+          }
+
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.rotate((p.rot * Math.PI) / 180);
+          ctx.fillStyle = p.color;
+          ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+          ctx.restore();
+        });
+        confettiAnimationId = requestAnimationFrame(updateConfetti);
+      }
+
+      if (confettiAnimationId) cancelAnimationFrame(confettiAnimationId);
+      updateConfetti();
+    }
+
+    function stopConfetti() {
+      const canvas = document.getElementById('confetti-canvas');
+      if (confettiAnimationId) {
+        cancelAnimationFrame(confettiAnimationId);
+        confettiAnimationId = null;
+      }
+      if (canvas) {
+        const ctx = canvas.getContext('2d');
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        canvas.classList.add('hidden');
+      }
+    }
+
+    // --- 11. KHỞI TẠO KHI TẢI TRANG ---
+    window.addEventListener('DOMContentLoaded', () => {
+      loadStudentInfo();
+      loadTasksState();
+      renderQuiz();
+
+      // Phục hồi tùy chọn cỡ chữ nếu đã lưu
+      if (localStorage.getItem('qb_large_font') === 'true') {
+        document.body.classList.add('large-text-mode');
+        const btnText = document.getElementById('font-btn-text');
+        if (btnText) btnText.textContent = "Chữ Vừa";
+      }
+
+      // Xử lý thay đổi kích thước cửa sổ cho confetti
+      window.addEventListener('resize', () => {
+        const canvas = document.getElementById('confetti-canvas');
+        if (canvas) {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

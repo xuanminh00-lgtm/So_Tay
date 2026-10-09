@@ -1,0 +1,6 @@
+{
+  "name": "Sổ Tay Kỹ Năng Số Quản Bạ",
+  "description": "Sổ tay kỹ năng số bỏ túi - Bình dân học vụ số Quản Bạ, tỉnh Tuyên Quang năm 2026",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
