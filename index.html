@@ -2437,7 +2437,7 @@
       }
     }, { once: true });
 
-    // Phát âm thanh trực tuyến chuẩn giọng nữ miền Bắc (Hà Nội) với độ trung thực và rõ ràng cao nhất
+    // Phát âm thanh chuẩn giọng nữ miền Bắc (Hà Nội) qua máy chủ TTS (Hoạt động trên Local, AI Studio và Vercel)
     function playNorthernAudioChunks(chunks, label) {
       audioChunks = chunks;
       currentChunkIdx = 0;
@@ -2454,9 +2454,9 @@
         }
 
         const chunk = audioChunks[currentChunkIdx];
-        // Tuyến 1: Proxy máy chủ nội bộ /api/tts (hoàn toàn tránh CORS, hoạt động 100% trong iFrame)
+        // Tuyến 1: Endpoint /api/tts (được xử lý bởi server.ts trên máy chủ hoặc Vercel Serverless Function api/tts.ts)
         const primaryUrl = '/api/tts?text=' + encodeURIComponent(chunk);
-        // Tuyến 2: Kết nối trực tiếp Google TTS nếu proxy gặp sự cố
+        // Tuyến 2: Kết nối trực tiếp Google TTS
         const fallbackUrl = 'https://translate.google.com/translate_tts?ie=UTF-8&tl=vi&client=tw-ob&q=' + encodeURIComponent(chunk);
 
         audio.playbackRate = speechRate;
@@ -2470,18 +2470,29 @@
           playNext();
         };
 
+        const tryWebSpeech = () => {
+          const v = findNorthernVoice();
+          if (v) {
+            console.log('Chuyển sang giọng tiếng Việt trên thiết bị:', v.name);
+            fallbackWebSpeech(audioChunks.slice(currentChunkIdx).join(' '), label);
+          } else {
+            console.warn('Không thể tải âm thanh trực tuyến và thiết bị không có gói giọng tiếng Việt.');
+            stopAllSpeech();
+            alert('Không thể kết nối đến máy chủ âm thanh để đọc giọng miền Bắc. Vui lòng kiểm tra lại kết nối mạng hoặc thử lại sau giây lát!');
+          }
+        };
+
         audio.onerror = () => {
           if (!hasTriedFallback) {
             hasTriedFallback = true;
-            console.warn('Proxy máy chủ chưa phản hồi, chuyển sang liên kết trực tuyến:', fallbackUrl);
+            console.warn('Proxy /api/tts chưa sẵn sàng, thử phát từ nguồn trực tuyến:', fallbackUrl);
             audio.src = fallbackUrl;
             audio.play().catch(err2 => {
-              console.warn('Liên kết trực tuyến không phát được, chuyển sang Web Speech:', err2);
-              fallbackWebSpeech(audioChunks.slice(currentChunkIdx).join(' '), label);
+              console.warn('Nguồn trực tuyến không phát được:', err2);
+              tryWebSpeech();
             });
           } else {
-            console.warn('Âm thanh trực tuyến thất bại, dùng Web Speech tiếng Việt:', chunk);
-            fallbackWebSpeech(audioChunks.slice(currentChunkIdx).join(' '), label);
+            tryWebSpeech();
           }
         };
 
@@ -2490,8 +2501,16 @@
         const playPromise = audio.play();
         if (playPromise !== undefined) {
           playPromise.catch(err => {
-            console.warn('Lỗi play() âm thanh, tự động chuyển Web Speech:', err);
-            fallbackWebSpeech(audioChunks.slice(currentChunkIdx).join(' '), label);
+            console.warn('audio.play() gặp lỗi:', err);
+            if (!hasTriedFallback) {
+              hasTriedFallback = true;
+              audio.src = fallbackUrl;
+              audio.play().catch(() => {
+                tryWebSpeech();
+              });
+            } else {
+              tryWebSpeech();
+            }
           });
         }
       }
@@ -2507,6 +2526,16 @@
         return;
       }
 
+      const voice = findNorthernVoice();
+      // BẢO VỆ NGHIÊM NGẶT: Nếu thiết bị KHÔNG có giọng tiếng Việt, TUYỆT ĐỐI KHÔNG GỌI speak()
+      // Vì nếu gọi mà không có giọng tiếng Việt, trình duyệt sẽ tự động lấy giọng tiếng Anh mặc định (David/Samantha) để đọc
+      if (!voice) {
+        console.warn('Thiết bị không có gói giọng tiếng Việt. Tuyệt đối không phát bằng giọng tiếng Anh!');
+        stopAllSpeech();
+        alert('Thiết bị của bạn chưa cài gói giọng đọc tiếng Việt của hệ điều hành. Vui lòng kiểm tra kết nối Internet để nghe giọng đọc chuẩn miền Bắc chất lượng cao từ máy chủ.');
+        return;
+      }
+
       try {
         window.speechSynthesis.cancel();
         if (window.speechSynthesis.paused) {
@@ -2514,12 +2543,9 @@
         }
       } catch (e) {}
 
-      const voice = findNorthernVoice();
       const utterance = new SpeechSynthesisUtterance(text);
-      if (voice) {
-        utterance.voice = voice;
-      }
-      utterance.lang = 'vi-VN';
+      utterance.voice = voice;
+      utterance.lang = voice.lang || 'vi-VN';
       utterance.rate = speechRate;
       utterance.pitch = 1.0;
 
@@ -2532,7 +2558,8 @@
         stopAllSpeech();
       };
 
-      utterance.onerror = () => {
+      utterance.onerror = (e) => {
+        console.warn('Lỗi Web Speech:', e);
         stopAllSpeech();
       };
 
