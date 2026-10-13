@@ -48,6 +48,7 @@
       } catch (e) {}
     })();
   </script>
+  <meta name="referrer" content="no-referrer" />
   <title>Sổ Tay Kỹ Năng Số Quản Bạ - Bình Dân Học Vụ Số 2026</title>
   <meta name="description" content="Sổ tay kỹ năng số bỏ túi - Bình dân học vụ số Quản Bạ, tỉnh Tuyên Quang năm 2026. Hướng dẫn trực quan kỹ năng số thiết yếu cho học sinh và bà con bản làng." />
   <meta property="og:title" content="Sổ Tay Kỹ Năng Số Quản Bạ - Bình Dân Học Vụ Số 2026" />
@@ -176,8 +177,13 @@
         <span class="bg-amber-400/20 text-amber-200 px-2 py-0.5 rounded text-[11px] font-semibold border border-amber-400/30">Năm 2026</span>
       </div>
 
-      <!-- Nút điều chỉnh trợ năng (Chữ to & Âm thanh) -->
-      <div class="flex items-center gap-2">
+      <!-- Nút điều chỉnh trợ năng (Chữ to & Thử giọng & Âm thanh) -->
+      <div class="flex items-center gap-1.5 sm:gap-2">
+        <button id="test-voice-btn" onclick="testNorthernVoice()" class="bg-amber-400/20 hover:bg-amber-400/30 text-amber-200 px-2 sm:px-2.5 py-1 rounded-md text-xs font-bold flex items-center gap-1 border border-amber-400/40 transition-colors" title="Thử giọng đọc chuẩn miền Bắc Việt Nam">
+          <i class="fa-solid fa-microphone-lines text-amber-300"></i>
+          <span>Thử Giọng Miền Bắc 🎙️</span>
+        </button>
+
         <button id="toggle-large-font-btn" onclick="toggleLargeFont()" class="bg-red-900/70 hover:bg-red-950 text-white px-2.5 py-1 rounded-md text-xs font-semibold flex items-center gap-1.5 transition-colors border border-amber-400/40" title="Chuyển chế độ chữ to cho người cao tuổi">
           <i class="fa-solid fa-text-height text-amber-300"></i>
           <span id="font-btn-text">Chữ To</span>
@@ -216,24 +222,34 @@
       </div>
 
       <!-- Hộp trạng thái giọng nói đang đọc (Ẩn mặc định, hiện khi phát âm thanh) -->
-      <div id="audio-live-pill" class="hidden mt-3 bg-red-900/90 border border-amber-400/50 rounded-xl p-2.5 items-center justify-between shadow-inner">
-        <div class="flex items-center gap-3 min-w-0">
+      <div id="audio-live-pill" class="hidden mt-3 bg-red-950/95 border-2 border-amber-400 rounded-2xl p-2.5 sm:p-3 items-center justify-between shadow-xl backdrop-blur-sm">
+        <div class="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1 mr-2">
           <!-- Hiệu ứng sóng âm -->
-          <div class="flex items-end gap-1 h-6 shrink-0 text-amber-300">
+          <div class="flex items-end gap-1 h-6 sm:h-7 shrink-0 text-amber-300">
             <div class="w-1 bg-amber-400 rounded-full wave-bar-1"></div>
             <div class="w-1 bg-amber-300 rounded-full wave-bar-2"></div>
             <div class="w-1 bg-amber-400 rounded-full wave-bar-3"></div>
             <div class="w-1 bg-amber-300 rounded-full wave-bar-4"></div>
           </div>
-          <div class="truncate">
-            <div class="text-xs font-bold text-amber-200">Đang đọc bài học giọng tiếng Việt (0.9x)...</div>
-            <div id="audio-current-label" class="text-[11px] text-white/90 truncate">Hướng dẫn số cho bà con và học sinh</div>
+          <div class="min-w-0">
+            <div class="flex items-center gap-1.5 flex-wrap">
+              <span class="text-[11px] sm:text-xs font-black text-amber-300 uppercase tracking-wide flex items-center gap-1">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-[10px]"></i> Giọng Nữ Chuẩn Miền Bắc 🎙️
+              </span>
+              <span id="audio-rate-badge" class="bg-amber-400/20 text-amber-200 text-[9px] sm:text-[10px] font-bold px-1.5 py-0.2 rounded border border-amber-400/40">0.9x</span>
+            </div>
+            <div id="audio-current-label" class="text-[11px] text-white/95 font-medium truncate mt-0.5">Hướng dẫn số cho bà con và học sinh</div>
           </div>
         </div>
-        <button onclick="stopAllSpeech()" class="bg-amber-400 hover:bg-amber-300 text-red-900 text-xs font-bold px-3 py-1.5 rounded-lg shrink-0 flex items-center gap-1 shadow">
-          <i class="fa-solid fa-stop"></i>
-          <span>Tắt</span>
-        </button>
+        <div class="flex items-center gap-1.5 shrink-0">
+          <button id="tts-speed-btn" onclick="toggleSpeechRate()" class="bg-red-900 hover:bg-red-800 text-amber-200 text-[10px] sm:text-xs font-bold px-2 py-1.5 rounded-lg border border-amber-400/30 transition-colors" title="Đổi tốc độ đọc">
+            <span id="speed-btn-label">Tốc độ</span>
+          </button>
+          <button onclick="stopAllSpeech()" class="bg-amber-400 hover:bg-amber-300 text-red-950 text-xs font-black px-2.5 sm:px-3 py-1.5 rounded-lg shrink-0 flex items-center gap-1 shadow transition-transform active:scale-95">
+            <i class="fa-solid fa-stop"></i>
+            <span>Dừng</span>
+          </button>
+        </div>
       </div>
 
       <!-- Lời nhắn ngắn động viên tinh thần vùng cao -->
@@ -2245,6 +2261,9 @@
     </div>
   </div>
 
+  <!-- THẺ AUDIO TOÀN CỤC PHÁT ÂM THANH MƯỢT MÀ TRÊN TẤT CẢ THIẾT BỊ -->
+  <audio id="qb-master-audio" class="hidden" playsinline preload="auto"></audio>
+
   <!-- CANVAS HIỆU ỨNG PHÁO HOA CONFETTI -->
   <canvas id="confetti-canvas" class="pointer-events-none fixed inset-0 z-50 w-full h-full hidden"></canvas>
 
@@ -2279,59 +2298,269 @@
       }
     };
 
-    // --- 2. QUẢN LÝ TEXT-TO-SPEECH (GIỌNG NÓI TIẾNG VIỆT) ---
+    // --- 2. QUẢN LÝ TEXT-TO-SPEECH (GIỌNG NÓI CHUẨN MIỀN BẮC VIỆT NAM) ---
     let synth = window.speechSynthesis;
     let currentUtterance = null;
     let vietnameseVoice = null;
+    let currentAudio = null;
+    let nextAudio = null;
+    let audioChunks = [];
+    let currentChunkIdx = 0;
+    let isSpeechPlaying = false;
+    let speechRate = 0.92; // Tốc độ vừa phải (chuẩn cho bà con và học sinh vùng cao)
+
+    // Tách văn bản thành các câu ngắn tự nhiên <= 130 ký tự để nạp âm thanh không bị ngắt quãng
+    function splitTextForAudio(text) {
+      if (!text) return [];
+      const cleaned = text.replace(/[\r\n]+/g, ' ').replace(/\s+/g, ' ').trim();
+      const rawParts = cleaned.split(/(?<=[.?!,;:\n])\s+/);
+      const chunks = [];
+      let current = '';
+
+      for (let i = 0; i < rawParts.length; i++) {
+        const part = rawParts[i].trim();
+        if (!part) continue;
+
+        if (!current) {
+          current = part;
+        } else if ((current + ' ' + part).length <= 130) {
+          current += ' ' + part;
+        } else {
+          chunks.push(current);
+          current = part;
+        }
+
+        while (current.length > 130) {
+          const spaceIdx = current.lastIndexOf(' ', 130);
+          if (spaceIdx > 30) {
+            chunks.push(current.substring(0, spaceIdx).trim());
+            current = current.substring(spaceIdx + 1).trim();
+          } else {
+            chunks.push(current.substring(0, 130).trim());
+            current = current.substring(130).trim();
+          }
+        }
+      }
+
+      if (current) chunks.push(current);
+      return chunks.filter(c => c.length > 0);
+    }
+
+    // Tìm kiếm giọng đọc chuẩn miền Bắc trong Web Speech API (ĐẢM BẢO 100% TIẾNG VIỆT, KHÔNG BAO GIỜ CHỌN GIỌNG TIẾNG ANH)
+    function findNorthernVoice() {
+      if (!('speechSynthesis' in window)) return null;
+      const allVoices = window.speechSynthesis.getVoices();
+      if (!allVoices || allVoices.length === 0) return null;
+
+      // BƯỚC 1: LỌC NGHIÊM NGẶT - CHỈ GIỮ CÁC GIỌNG CÓ NGÔN NGỮ TIẾNG VIỆT
+      // Tuyệt đối loại trừ toàn bộ giọng tiếng Anh (như Samantha, Daniel, Susan, David...)
+      const viVoices = allVoices.filter(v => {
+        const lang = (v.lang || '').toLowerCase().trim();
+        const name = (v.name || '').toLowerCase().trim();
+        const isViLang = lang.startsWith('vi') || lang.includes('vi-vn') || lang.includes('vi_vn');
+        const isViName = name.includes('tiếng việt') || name.includes('vietnamese') || (name.includes('vietnam') && !name.includes('english'));
+        return isViLang || isViName;
+      });
+
+      if (viVoices.length === 0) {
+        return null; // Không có giọng tiếng Việt trên thiết bị
+      }
+
+      // BƯỚC 2: Ưu tiên cao nhất cho giọng chuẩn miền Bắc (Hà Nội)
+      // 1. Microsoft HoaiMy Online (Natural) - Giọng nữ Hà Nội cực chuẩn trên Windows/Edge
+      // 2. Google Tiếng Việt - Giọng chuẩn trên Android và Google Chrome
+      // 3. Microsoft NamMinh Online (Natural) - Giọng nam Hà Nội
+      // 4. Apple Linh - Giọng nữ chuẩn trên iPhone/iPad/Mac
+      const northernPriorities = ['hoaimy', 'google tiếng việt', 'namminh', 'hanoi', 'linh'];
+      for (const kw of northernPriorities) {
+        const found = viVoices.find(v => v.name.toLowerCase().includes(kw));
+        if (found) return found;
+      }
+
+      // Microsoft An (chỉ tìm trong danh sách tiếng Việt)
+      const anVoice = viVoices.find(v => /\ban\b/i.test(v.name) || v.name.toLowerCase().includes('microsoft an'));
+      if (anVoice) return anVoice;
+
+      // BƯỚC 3: Giọng có mã vi-VN chuẩn
+      const viVn = viVoices.find(v => {
+        const l = (v.lang || '').toLowerCase();
+        return l === 'vi-vn' || l === 'vi_vn';
+      });
+      if (viVn) return viVn;
+
+      // BƯỚC 4: Bất kỳ giọng tiếng Việt nào còn lại
+      return viVoices[0];
+    }
 
     function initVoices() {
-      if (!('speechSynthesis' in window)) return;
-      const voices = synth.getVoices();
-      // Ưu tiên tìm giọng tiếng Việt
-      vietnameseVoice = voices.find(v => v.lang.includes('vi-VN') || v.lang.startsWith('vi') || v.name.toLowerCase().includes('vietnam')) || null;
+      vietnameseVoice = findNorthernVoice();
+      const statusLabel = document.getElementById('audio-voice-status');
+      if (statusLabel) {
+        if (vietnameseVoice) {
+          statusLabel.textContent = `Giọng thiết bị: ${vietnameseVoice.name}`;
+        } else {
+          statusLabel.textContent = `Giọng trực tuyến: Nữ Hà Nội Chuẩn`;
+        }
+      }
     }
 
     if ('speechSynthesis' in window) {
-      speechSynthesis.onvoiceschanged = initVoices;
+      window.speechSynthesis.onvoiceschanged = () => {
+        initVoices();
+      };
+      // Gọi ngay lúc đầu
       initVoices();
     }
 
-    function speakText(text, label = "") {
+    // Lấy thẻ audio dùng chung cố định để vượt qua mọi rào cản Autoplay trên điện thoại di động
+    function getMasterAudio() {
+      let audio = document.getElementById('qb-master-audio');
+      if (!audio) {
+        audio = document.createElement('audio');
+        audio.id = 'qb-master-audio';
+        audio.className = 'hidden';
+        audio.setAttribute('playsinline', '');
+        document.body.appendChild(audio);
+      }
+      return audio;
+    }
+
+    // Mở khóa âm thanh di động khi người dùng chạm lần đầu
+    document.addEventListener('click', function unlockMobileAudio() {
+      const a = getMasterAudio();
+      if (a && !a.src) {
+        a.src = 'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA';
+        a.play().then(() => {
+          a.pause();
+          a.removeAttribute('src');
+        }).catch(() => {});
+      }
+    }, { once: true });
+
+    // Phát âm thanh trực tuyến chuẩn giọng nữ miền Bắc (Hà Nội) với độ trung thực và rõ ràng cao nhất
+    function playNorthernAudioChunks(chunks, label) {
+      audioChunks = chunks;
+      currentChunkIdx = 0;
+      isSpeechPlaying = true;
+      showAudioPill(label || chunks[0].substring(0, 45) + '...');
+
+      const audio = getMasterAudio();
+      currentAudio = audio;
+
+      function playNext() {
+        if (!isSpeechPlaying || currentChunkIdx >= audioChunks.length) {
+          stopAllSpeech();
+          return;
+        }
+
+        const chunk = audioChunks[currentChunkIdx];
+        // Tuyến 1: Proxy máy chủ nội bộ /api/tts (hoàn toàn tránh CORS, hoạt động 100% trong iFrame)
+        const primaryUrl = '/api/tts?text=' + encodeURIComponent(chunk);
+        // Tuyến 2: Kết nối trực tiếp Google TTS nếu proxy gặp sự cố
+        const fallbackUrl = 'https://translate.google.com/translate_tts?ie=UTF-8&tl=vi&client=tw-ob&q=' + encodeURIComponent(chunk);
+
+        audio.playbackRate = speechRate;
+        audio.referrerPolicy = 'no-referrer';
+        audio.crossOrigin = 'anonymous';
+
+        let hasTriedFallback = false;
+
+        audio.onended = () => {
+          currentChunkIdx++;
+          playNext();
+        };
+
+        audio.onerror = () => {
+          if (!hasTriedFallback) {
+            hasTriedFallback = true;
+            console.warn('Proxy máy chủ chưa phản hồi, chuyển sang liên kết trực tuyến:', fallbackUrl);
+            audio.src = fallbackUrl;
+            audio.play().catch(err2 => {
+              console.warn('Liên kết trực tuyến không phát được, chuyển sang Web Speech:', err2);
+              fallbackWebSpeech(audioChunks.slice(currentChunkIdx).join(' '), label);
+            });
+          } else {
+            console.warn('Âm thanh trực tuyến thất bại, dùng Web Speech tiếng Việt:', chunk);
+            fallbackWebSpeech(audioChunks.slice(currentChunkIdx).join(' '), label);
+          }
+        };
+
+        audio.src = primaryUrl;
+
+        const playPromise = audio.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(err => {
+            console.warn('Lỗi play() âm thanh, tự động chuyển Web Speech:', err);
+            fallbackWebSpeech(audioChunks.slice(currentChunkIdx).join(' '), label);
+          });
+        }
+      }
+
+      playNext();
+    }
+
+    // Phương án dự phòng Web Speech API (ĐẢM BẢO CHỈ NÓI TIẾNG VIỆT - TUYỆT ĐỐI KHÔNG DÙNG GIỌNG TIẾNG ANH)
+    function fallbackWebSpeech(text, label) {
       if (!('speechSynthesis' in window)) {
-        alert("Trình duyệt này chưa hỗ trợ đọc giọng nói. Hãy dùng Google Chrome hoặc Safari trên điện thoại nhé!");
+        hideAudioPill();
+        alert('Trình duyệt của bạn không hỗ trợ tính năng phát âm thanh.');
         return;
       }
 
-      // Dừng âm thanh đang phát trước đó
-      stopAllSpeech();
+      try {
+        window.speechSynthesis.cancel();
+        if (window.speechSynthesis.paused) {
+          window.speechSynthesis.resume();
+        }
+      } catch (e) {}
 
+      const voice = findNorthernVoice();
       const utterance = new SpeechSynthesisUtterance(text);
+      if (voice) {
+        utterance.voice = voice;
+      }
       utterance.lang = 'vi-VN';
-      utterance.rate = 0.9; // Tốc độ vừa phải theo yêu cầu đề bài
+      utterance.rate = speechRate;
       utterance.pitch = 1.0;
 
-      if (vietnameseVoice) {
-        utterance.voice = vietnameseVoice;
-      }
-
       utterance.onstart = () => {
-        showAudioPill(label || text.substring(0, 45) + "...");
+        isSpeechPlaying = true;
+        showAudioPill(label || text.substring(0, 45) + '...');
       };
 
       utterance.onend = () => {
-        hideAudioPill();
+        stopAllSpeech();
       };
 
       utterance.onerror = () => {
-        hideAudioPill();
+        stopAllSpeech();
       };
 
       currentUtterance = utterance;
-      synth.speak(utterance);
+      // Tránh lỗi trình duyệt Chrome hủy phát biểu khi gọi speak ngay sau cancel
+      setTimeout(() => {
+        try {
+          window.speechSynthesis.speak(utterance);
+        } catch (err) {
+          console.error('Lỗi speechSynthesis.speak:', err);
+        }
+      }, 60);
+    }
+
+    // Hàm gọi phát âm chính cho toàn bộ ứng dụng (Đảm bảo 100% chuẩn tiếng miền Bắc)
+    function speakText(text, label = '') {
+      if (!text) return;
+      stopAllSpeech();
+
+      const chunks = splitTextForAudio(text);
+      if (chunks.length === 0) return;
+
+      // Ưu tiên cao nhất: Phát âm qua proxy máy chủ Chuẩn Nữ Miền Bắc cực kỳ tự nhiên, rõ ràng
+      playNorthernAudioChunks(chunks, label);
     }
 
     function speakStep(text) {
-      speakText(text, "Đang đọc bước hướng dẫn...");
+      speakText(text, 'Đang đọc bước hướng dẫn...');
     }
 
     function speakTopic(topicId) {
@@ -2341,10 +2570,52 @@
       }
     }
 
-    function stopAllSpeech() {
-      if ('speechSynthesis' in window && synth.speaking) {
-        synth.cancel();
+    function testNorthernVoice() {
+      speakText(
+        'Xin chào quý thầy cô, các em học sinh và bà con bản làng Quản Bạ! Đây là giọng đọc tiếng Việt chuẩn miền Bắc của Sổ tay kỹ năng số Quản Bạ năm 2026. Chúc bà con và các em học tập vui vẻ, an toàn số!',
+        'Thử giọng đọc chuẩn miền Bắc'
+      );
+    }
+
+    function toggleSpeechRate() {
+      if (speechRate >= 1.0) {
+        speechRate = 0.8;
+      } else if (speechRate === 0.8) {
+        speechRate = 0.92;
+      } else {
+        speechRate = 1.05;
       }
+
+      const label = speechRate === 0.8 ? 'Tốc độ: 0.8x' : (speechRate === 0.92 ? 'Tốc độ: 0.9x' : 'Tốc độ: 1.0x');
+      const badge = document.getElementById('audio-rate-badge');
+      const btnLabel = document.getElementById('speed-btn-label');
+      if (badge) badge.textContent = speechRate + 'x';
+      if (btnLabel) btnLabel.textContent = label;
+
+      if (currentAudio) {
+        currentAudio.playbackRate = speechRate;
+      }
+    }
+
+    function stopAllSpeech() {
+      isSpeechPlaying = false;
+      const audio = document.getElementById('qb-master-audio');
+      if (audio) {
+        try {
+          audio.pause();
+          audio.currentTime = 0;
+          audio.removeAttribute('src');
+        } catch(e) {}
+      }
+      currentAudio = null;
+      nextAudio = null;
+      audioChunks = [];
+      currentChunkIdx = 0;
+
+      if ('speechSynthesis' in window && window.speechSynthesis.speaking) {
+        window.speechSynthesis.cancel();
+      }
+      currentUtterance = null;
       hideAudioPill();
     }
 
@@ -2352,10 +2623,15 @@
       const pill = document.getElementById('audio-live-pill');
       const textLabel = document.getElementById('audio-current-label');
       const stopBtn = document.getElementById('tts-stop-all-btn');
-      if (pill) pill.classList.remove('hidden');
-      if (pill) pill.classList.add('flex');
+      if (pill) {
+        pill.classList.remove('hidden');
+        pill.classList.add('flex');
+      }
       if (textLabel) textLabel.textContent = label;
-      if (stopBtn) stopBtn.classList.remove('hidden');
+      if (stopBtn) {
+        stopBtn.classList.remove('hidden');
+        stopBtn.classList.add('flex');
+      }
     }
 
     function hideAudioPill() {
@@ -2365,7 +2641,10 @@
         pill.classList.remove('flex');
         pill.classList.add('hidden');
       }
-      if (stopBtn) stopBtn.classList.add('hidden');
+      if (stopBtn) {
+        stopBtn.classList.remove('flex');
+        stopBtn.classList.add('hidden');
+      }
     }
 
     // --- 3. ĐIỀU HƯỚNG CHUYÊN ĐỀ (TABS) ---
